@@ -1,0 +1,18 @@
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\bin\Debug\Novo Projeto de Jogo.deps.json
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\bin\Debug\Novo Projeto de Jogo.runtimeconfig.json
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\bin\Debug\Novo Projeto de Jogo.dll
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\bin\Debug\Novo Projeto de Jogo.pdb
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.csproj.AssemblyReference.cache
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.AssemblyInfoInputs.cache
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.AssemblyInfo.cs
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.csproj.CoreCompileInputs.cache
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Pro.99D182C3.Up2Date
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.dll
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\refint\Novo Projeto de Jogo.dll
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.pdb
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.genruntimeconfig.cache
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\ref\Novo Projeto de Jogo.dll
+C:\Users\gugaj\Documents\novo-projeto-de-jogo\.godot\mono\temp\obj\Debug\Novo Projeto de Jogo.sourcelink.json

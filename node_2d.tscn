@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cssxebp0ujcpy"]
+
+[ext_resource type="Script" path="res://NewScript.cs" id="1_gudom"]
+[ext_resource type="PackedScene" uid="uid://bjot3a15kelp5" path="res://player.tscn" id="2_g433j"]
+
+[node name="Town" type="Node2D"]
+script = ExtResource("1_gudom")
+
+[node name="player" parent="." instance=ExtResource("2_g433j")]
