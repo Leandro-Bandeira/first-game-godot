@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733710687
+::res://::1734375729
 icon.svg::CompressedTexture2D::9058877708155599041::1733350492::1733350498::1::::<><>::
-NewScript.cs::CSharpScript::-1::1733350559::0::1::::<>Node<>::
-node_2d.tscn::PackedScene::6074803063311494534::1733702436::0::1::::<><>::res://NewScript.cs<>uid://bjot3a15kelp5::::res://player.tscn
-Player.cs::CSharpScript::-1::1733702432::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3048225231625640648::1733702436::0::1::::<><>::res://Player.cs<>uid://gw8xi2g32qci::::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/48x48/Char_001.png
+NewScript.cs::CSharpScript::-1::1733839313::0::1::::<>Node<>::
+node_2d.tscn::PackedScene::6074803063311494534::1733848676::0::1::::<><>::uid://bjot3a15kelp5::::res://player.tscn
+player.gd::GDScript::-1::1733920790::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::3048225231625640648::1734375377::0::1::::<><>::res://player.gd<>uid://gw8xi2g32qci::::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/48x48/Char_001.png
+README.md::TextFile::-1::1733711934::0::1::::<><>::
 ::res://assets/::1733351444
 ::res://assets/Free Character Sprites - Fantasy Dreamland/::1733351438
 ::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/::1733351439

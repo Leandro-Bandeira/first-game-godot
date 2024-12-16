@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qgRleniKcxM=",
+  "dgSpecHash": "/0wphKrkqpk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\Novo Projeto de Jogo.csproj",
+  "projectFilePath": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\first-game-godot\\Novo Projeto de Jogo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gugaj\\.nuget\\packages\\godot.sourcegenerators\\4.3.0\\godot.sourcegenerators.4.3.0.nupkg.sha512",
     "C:\\Users\\gugaj\\.nuget\\packages\\godotsharp\\4.3.0\\godotsharp.4.3.0.nupkg.sha512",

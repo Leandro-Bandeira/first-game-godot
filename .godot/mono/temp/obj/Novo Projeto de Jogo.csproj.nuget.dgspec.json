@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\Novo Projeto de Jogo.csproj": {}
+    "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\first-game-godot\\Novo Projeto de Jogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\Novo Projeto de Jogo.csproj": {
+    "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\first-game-godot\\Novo Projeto de Jogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\Novo Projeto de Jogo.csproj",
+        "projectUniqueName": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\first-game-godot\\Novo Projeto de Jogo.csproj",
         "projectName": "Novo Projeto de Jogo",
-        "projectPath": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\Novo Projeto de Jogo.csproj",
+        "projectPath": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\first-game-godot\\Novo Projeto de Jogo.csproj",
         "packagesPath": "C:\\Users\\gugaj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\gugaj\\Documents\\novo-projeto-de-jogo\\first-game-godot\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gugaj\\AppData\\Roaming\\NuGet\\NuGet.Config"
