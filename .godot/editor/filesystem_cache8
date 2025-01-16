@@ -1,151 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734375729
-icon.svg::CompressedTexture2D::9058877708155599041::1733350492::1733350498::1::::<><>::
-NewScript.cs::CSharpScript::-1::1733839313::0::1::::<>Node<>::
-node_2d.tscn::PackedScene::6074803063311494534::1733848676::0::1::::<><>::uid://bjot3a15kelp5::::res://player.tscn
-player.gd::GDScript::-1::1733920790::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3048225231625640648::1734375377::0::1::::<><>::res://player.gd<>uid://gw8xi2g32qci::::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/48x48/Char_001.png
-README.md::TextFile::-1::1733711934::0::1::::<><>::
-::res://assets/::1733351444
-::res://assets/Free Character Sprites - Fantasy Dreamland/::1733351438
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/::1733351439
-License.txt::TextFile::-1::1733351438::0::1::::<><>::
-Read Me.txt::TextFile::-1::1733351438::0::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/16x16/::1733351457
-Char_001.png::CompressedTexture2D::7895686952284729954::1733351438::1733351457::1::::<><>::
-Char_001_Idle.png::CompressedTexture2D::8787631810385487135::1733351438::1733351457::1::::<><>::
-Char_002.png::CompressedTexture2D::6480523271904339504::1733351438::1733351457::1::::<><>::
-Char_002_Idle.png::CompressedTexture2D::8625951386371313271::1733351438::1733351457::1::::<><>::
-Char_003.png::CompressedTexture2D::8026081941239134608::1733351438::1733351457::1::::<><>::
-Char_003_Idle.png::CompressedTexture2D::7009820638068742857::1733351438::1733351457::1::::<><>::
-Char_004.png::CompressedTexture2D::5268436335835380835::1733351438::1733351457::1::::<><>::
-Char_004_Idle.png::CompressedTexture2D::6162787350220954144::1733351438::1733351457::1::::<><>::
-Char_005.png::CompressedTexture2D::4804276890631894661::1733351438::1733351457::1::::<><>::
-Char_005_Idle.png::CompressedTexture2D::3528935315876670801::1733351438::1733351457::1::::<><>::
-Char_006.png::CompressedTexture2D::5448445124057086343::1733351438::1733351457::1::::<><>::
-Char_006_Idle.png::CompressedTexture2D::5830176390241437206::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/32x32/::1733351457
-Char_001.png::CompressedTexture2D::3805739846596004994::1733351439::1733351457::1::::<><>::
-Char_001_Idle.png::CompressedTexture2D::1675824892422702987::1733351439::1733351457::1::::<><>::
-Char_002.png::CompressedTexture2D::7841669446666563982::1733351439::1733351457::1::::<><>::
-Char_002_Idle.png::CompressedTexture2D::6645612665489932429::1733351439::1733351457::1::::<><>::
-Char_003.png::CompressedTexture2D::6232097659425781715::1733351439::1733351457::1::::<><>::
-Char_003_Idle.png::CompressedTexture2D::4958730515137735792::1733351439::1733351457::1::::<><>::
-Char_004.png::CompressedTexture2D::3575190640438054264::1733351439::1733351457::1::::<><>::
-Char_004_Idle.png::CompressedTexture2D::6222088165526658547::1733351439::1733351457::1::::<><>::
-Char_005.png::CompressedTexture2D::4726223407418648335::1733351439::1733351457::1::::<><>::
-Char_005_Idle.png::CompressedTexture2D::133800732011556051::1733351439::1733351457::1::::<><>::
-Char_006.png::CompressedTexture2D::8397567292353388313::1733351439::1733351457::1::::<><>::
-Char_006_Idle.png::CompressedTexture2D::7573810140450247056::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/48x48/::1733351589
-Char_001.png::CompressedTexture2D::468594568646245412::1733351439::1733351457::1::::<><>::
-Char_001_Idle.png::CompressedTexture2D::1597081799820486196::1733351439::1733351589::1::::<><>::
-Char_002.png::CompressedTexture2D::9034758299667246511::1733351439::1733351457::1::::<><>::
-Char_002_Idle.png::CompressedTexture2D::7383502945780263909::1733351439::1733351457::1::::<><>::
-Char_003.png::CompressedTexture2D::8654008791388856130::1733351439::1733351457::1::::<><>::
-Char_003_Idle.png::CompressedTexture2D::4457297171975908238::1733351439::1733351457::1::::<><>::
-Char_004.png::CompressedTexture2D::7603778210951177051::1733351439::1733351457::1::::<><>::
-Char_004_Idle.png::CompressedTexture2D::8579842835768203371::1733351439::1733351457::1::::<><>::
-Char_005.png::CompressedTexture2D::130548936456989477::1733351439::1733351457::1::::<><>::
-Char_005_Idle.png::CompressedTexture2D::5052319937043238385::1733351439::1733351457::1::::<><>::
-Char_006.png::CompressedTexture2D::4797498208592192816::1733351439::1733351457::1::::<><>::
-Char_006_Idle.png::CompressedTexture2D::714832040940430336::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/::1733351440
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MV/::1733351439
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MV/characters/::1733351457
-$Char_001.png::CompressedTexture2D::9208877670121752170::1733351439::1733351457::1::::<><>::
-$Char_001_Idle.png::CompressedTexture2D::4935835107739755562::1733351439::1733351457::1::::<><>::
-$Char_002.png::CompressedTexture2D::8832515166002440398::1733351439::1733351457::1::::<><>::
-$Char_002_Idle.png::CompressedTexture2D::4078566914700801849::1733351439::1733351457::1::::<><>::
-$Char_003.png::CompressedTexture2D::6158365478006549867::1733351439::1733351457::1::::<><>::
-$Char_003_Idle.png::CompressedTexture2D::3753879905618427063::1733351439::1733351457::1::::<><>::
-$Char_004.png::CompressedTexture2D::3845546110563013078::1733351439::1733351457::1::::<><>::
-$Char_004_Idle.png::CompressedTexture2D::2570640084538267862::1733351439::1733351457::1::::<><>::
-$Char_005.png::CompressedTexture2D::3710198315331692652::1733351439::1733351457::1::::<><>::
-$Char_005_Idle.png::CompressedTexture2D::941360327567801818::1733351439::1733351457::1::::<><>::
-$Char_006.png::CompressedTexture2D::3038040558589567736::1733351439::1733351457::1::::<><>::
-$Char_006_Idle.png::CompressedTexture2D::1102963299345529650::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MV/sv_actors/::1733351457
-Char_001_Battler.png::CompressedTexture2D::6381903601114358162::1733351439::1733351457::1::::<><>::
-Char_002_Battler.png::CompressedTexture2D::4876917507549087752::1733351439::1733351457::1::::<><>::
-Char_003_Battler.png::CompressedTexture2D::7867032293272729160::1733351439::1733351457::1::::<><>::
-Char_004_Battler.png::CompressedTexture2D::6325603384748909256::1733351439::1733351457::1::::<><>::
-Char_005_Battler.png::CompressedTexture2D::5511872570620856666::1733351439::1733351457::1::::<><>::
-Char_006_Battler.png::CompressedTexture2D::568917452009440530::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (16x16)/::1733351439
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (16x16)/characters/::1733351457
-$Char_001.png::CompressedTexture2D::3258845981791302502::1733351439::1733351457::1::::<><>::
-$Char_001_Idle.png::CompressedTexture2D::6125754497739695539::1733351439::1733351457::1::::<><>::
-$Char_002.png::CompressedTexture2D::4064144424981473236::1733351439::1733351457::1::::<><>::
-$Char_002_Idle.png::CompressedTexture2D::1036492140705420597::1733351439::1733351457::1::::<><>::
-$Char_003.png::CompressedTexture2D::8018280175508173842::1733351439::1733351457::1::::<><>::
-$Char_003_Idle.png::CompressedTexture2D::7174161520668180318::1733351439::1733351457::1::::<><>::
-$Char_004.png::CompressedTexture2D::8067189824530749850::1733351439::1733351457::1::::<><>::
-$Char_004_Idle.png::CompressedTexture2D::171347675994466713::1733351439::1733351457::1::::<><>::
-$Char_005.png::CompressedTexture2D::5380176690382556789::1733351439::1733351457::1::::<><>::
-$Char_005_Idle.png::CompressedTexture2D::7912755177590160302::1733351439::1733351457::1::::<><>::
-$Char_006.png::CompressedTexture2D::6269943598759379839::1733351439::1733351457::1::::<><>::
-$Char_006_Idle.png::CompressedTexture2D::4692693824876476503::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (16x16)/sv_actors/::1733351457
-Char_001_Battler.png::CompressedTexture2D::2318232720603007355::1733351439::1733351457::1::::<><>::
-Char_002_Battler.png::CompressedTexture2D::8834988375669664143::1733351439::1733351457::1::::<><>::
-Char_003_Battler.png::CompressedTexture2D::8168045974290787515::1733351439::1733351457::1::::<><>::
-Char_004_Battler.png::CompressedTexture2D::7108059010494449946::1733351439::1733351457::1::::<><>::
-Char_005_Battler.png::CompressedTexture2D::4942661189146889969::1733351439::1733351457::1::::<><>::
-Char_006_Battler.png::CompressedTexture2D::7828828885923934411::1733351439::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (32x32)/::1733351440
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (32x32)/characters/::1733351457
-$Char_001.png::CompressedTexture2D::7481376449509362669::1733351439::1733351457::1::::<><>::
-$Char_001_Idle.png::CompressedTexture2D::2776198324832324228::1733351439::1733351457::1::::<><>::
-$Char_002.png::CompressedTexture2D::653902386302666962::1733351439::1733351457::1::::<><>::
-$Char_002_Idle.png::CompressedTexture2D::4379084948266232736::1733351439::1733351457::1::::<><>::
-$Char_003.png::CompressedTexture2D::2084598642778286811::1733351439::1733351457::1::::<><>::
-$Char_003_Idle.png::CompressedTexture2D::4994915934734993113::1733351439::1733351457::1::::<><>::
-$Char_004.png::CompressedTexture2D::4079016255643676647::1733351439::1733351457::1::::<><>::
-$Char_004_Idle.png::CompressedTexture2D::6404505632732114021::1733351440::1733351457::1::::<><>::
-$Char_005.png::CompressedTexture2D::7848445772123438387::1733351440::1733351457::1::::<><>::
-$Char_005_Idle.png::CompressedTexture2D::8714278083005070486::1733351440::1733351457::1::::<><>::
-$Char_006.png::CompressedTexture2D::1739698241656697454::1733351440::1733351457::1::::<><>::
-$Char_006_Idle.png::CompressedTexture2D::2177668806746765498::1733351440::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (32x32)/sv_actors/::1733351457
-Char_001_Battler.png::CompressedTexture2D::7024571195941028213::1733351440::1733351457::1::::<><>::
-Char_002_Battler.png::CompressedTexture2D::5549669017022209958::1733351440::1733351457::1::::<><>::
-Char_003_Battler.png::CompressedTexture2D::7859909777851038740::1733351440::1733351457::1::::<><>::
-Char_004_Battler.png::CompressedTexture2D::3840265175685656978::1733351440::1733351457::1::::<><>::
-Char_005_Battler.png::CompressedTexture2D::7915339639305003215::1733351440::1733351457::1::::<><>::
-Char_006_Battler.png::CompressedTexture2D::5877390928332130399::1733351440::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (48x48)/::1733351440
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (48x48)/characters/::1733351457
-$Char_001.png::CompressedTexture2D::7111543138637166008::1733351440::1733351457::1::::<><>::
-$Char_001_Idle.png::CompressedTexture2D::7363682458117461108::1733351440::1733351457::1::::<><>::
-$Char_002.png::CompressedTexture2D::5704516485260753830::1733351440::1733351457::1::::<><>::
-$Char_002_Idle.png::CompressedTexture2D::3462842347039548115::1733351440::1733351457::1::::<><>::
-$Char_003.png::CompressedTexture2D::21403049055199737::1733351440::1733351457::1::::<><>::
-$Char_003_Idle.png::CompressedTexture2D::4295336113739935260::1733351440::1733351457::1::::<><>::
-$Char_004.png::CompressedTexture2D::1601537811871542761::1733351440::1733351457::1::::<><>::
-$Char_004_Idle.png::CompressedTexture2D::2147503566275026831::1733351440::1733351457::1::::<><>::
-$Char_005.png::CompressedTexture2D::7207154470447554783::1733351440::1733351457::1::::<><>::
-$Char_005_Idle.png::CompressedTexture2D::668640234363302315::1733351440::1733351457::1::::<><>::
-$Char_006.png::CompressedTexture2D::7981159760162614679::1733351440::1733351457::1::::<><>::
-$Char_006_Idle.png::CompressedTexture2D::2952652782304417611::1733351440::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker MZ (48x48)/sv_actors/::1733351457
-Char_001_Battler.png::CompressedTexture2D::408230998079210352::1733351440::1733351457::1::::<><>::
-Char_002_Battler.png::CompressedTexture2D::1614632072893781106::1733351440::1733351457::1::::<><>::
-Char_003_Battler.png::CompressedTexture2D::7863128277143571618::1733351440::1733351457::1::::<><>::
-Char_004_Battler.png::CompressedTexture2D::4056466742574976054::1733351440::1733351457::1::::<><>::
-Char_005_Battler.png::CompressedTexture2D::9158678319809164328::1733351440::1733351457::1::::<><>::
-Char_006_Battler.png::CompressedTexture2D::194183080366276563::1733351440::1733351457::1::::<><>::
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker VX Ace/::1733351440
-::res://assets/Free Character Sprites - Fantasy Dreamland/Free Character Sprites - Fantasy Dreamland/RPG Maker/RPG Maker VX Ace/characters/::1733351457
-$Char_001.png::CompressedTexture2D::4802798641670439558::1733351440::1733351457::1::::<><>::
-$Char_001_Idle.png::CompressedTexture2D::4433525246984723084::1733351440::1733351457::1::::<><>::
-$Char_002.png::CompressedTexture2D::3055868494812879132::1733351440::1733351457::1::::<><>::
-$Char_002_Idle.png::CompressedTexture2D::8927462517894303121::1733351440::1733351457::1::::<><>::
-$Char_003.png::CompressedTexture2D::3213580342609461574::1733351440::1733351457::1::::<><>::
-$Char_003_Idle.png::CompressedTexture2D::4315808953298491356::1733351440::1733351457::1::::<><>::
-$Char_004.png::CompressedTexture2D::8326618290631573663::1733351440::1733351457::1::::<><>::
-$Char_004_Idle.png::CompressedTexture2D::4620225644415313049::1733351440::1733351457::1::::<><>::
-$Char_005.png::CompressedTexture2D::4298191734191273342::1733351440::1733351457::1::::<><>::
-$Char_005_Idle.png::CompressedTexture2D::5260960280400035792::1733351440::1733351457::1::::<><>::
-$Char_006.png::CompressedTexture2D::5822973003289011011::1733351440::1733351457::1::::<><>::
-$Char_006_Idle.png::CompressedTexture2D::4807107112219656859::1733351440::1733351457::1::::<><>::
+::res://::1736981492
+icon.svg::CompressedTexture2D::5080911233163149401::1736817876::1736817880::1::::<><>::
+node_2d.tscn::PackedScene::1967039647821842116::1736879650::0::1::::<><>::uid://cvar6d8rfgrd2::::res://Player/player.tscn
+::res://Player/::1736898178
+player.tscn::PackedScene::6247894841600899493::1736898178::0::1::::<><>::res://Player/Scripts/player.gd<>uid://2bhbm0wtlvmi::::res://Player/Sprites/Player/spritesheet.png<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/player_state_machine.gd<>res://Player/Scripts/state_walk.gd
+::res://Player/Scripts/::1736898035
+player.gd::GDScript::-1::1736896410::0::1::::Player<>CharacterBody2D<>::
+player_state_machine.gd::GDScript::-1::1736896013::0::1::::PlayerStateMachine<>Node<>::
+state.gd::GDScript::-1::1736895335::0::1::::State<>Node<>::
+state_idle.gd::GDScript::-1::1736897529::0::1::::State_Idle<>State<>::
+state_walk.gd::GDScript::-1::1736898035::0::1::::State_Walk<>State<>::
+::res://Player/Sprites/::1736819361
+::res://Player/Sprites/Player/::1736881267
+Red_Girl_Idle.png::CompressedTexture2D::6298339535064235837::1721923352::1736819327::1::::<><>::
+Red_Girl_Walk.png::CompressedTexture2D::1930597921903613356::1721922922::1736819327::1::::<><>::
+spritesheet.png::CompressedTexture2D::1897590630649943164::1736881245::1736881267::1::::<><>::

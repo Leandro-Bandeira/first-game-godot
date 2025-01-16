@@ -1,2 +1,6 @@
-res://player.gd
-res://player.tscn
+res://node_2d.tscn
+res://Player/player.tscn
+res://Player/Scripts/player.gd
+res://Player/Scripts/player_state_machine.gd
+res://Player/Scripts/state.gd
+res://Player/Scripts/state_walk.gd
