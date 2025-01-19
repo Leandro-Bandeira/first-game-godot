@@ -1,6 +1,4 @@
-res://node_2d.tscn
-res://Player/player.tscn
-res://Player/Scripts/player.gd
-res://Player/Scripts/player_state_machine.gd
-res://Player/Scripts/state.gd
-res://Player/Scripts/state_walk.gd
+res://Worlds/MainLand.tscn
+res://Tile Maps/MainLand.tscn
+res://Tile Maps/map_01.tscn
+res://Worlds/TestArea1.tscn

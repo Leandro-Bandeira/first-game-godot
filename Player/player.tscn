@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://Player/Scripts/player_state_machine.gd" id="3_fjhmm"]
 [ext_resource type="Script" path="res://Player/Scripts/state_walk.gd" id="5_6uunf"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xjfnj"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1qyoj"]
 
 [sub_resource type="Animation" id="Animation_8d5m4"]
 length = 0.001
@@ -137,14 +137,17 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D"]
+texture_filter = 1
 position = Vector2(249, 136)
+motion_mode = 1
 script = ExtResource("1_6x0l6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_xjfnj")
+position = Vector2(17, -4)
+shape = SubResource("CapsuleShape2D_1qyoj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture_filter = 1
+position = Vector2(17, 1)
 texture = ExtResource("2_380y8")
 hframes = 9
 vframes = 4
@@ -153,6 +156,8 @@ vframes = 4
 libraries = {
 "": SubResource("AnimationLibrary_t8h8i")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("3_fjhmm")

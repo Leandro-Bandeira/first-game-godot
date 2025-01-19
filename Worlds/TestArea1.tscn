@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://dt3tc6mu3bxpw"]
+
+[ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="1_dyumo"]
+[ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_rjut8"]
+[ext_resource type="PackedScene" uid="uid://bxwq8ghj5lr5h" path="res://Tile Maps/map_01.tscn" id="3_rs0o6"]
+[ext_resource type="PackedScene" uid="uid://bqctp7mykqxgj" path="res://Worlds/transicao/pathway.tscn" id="5_dexcx"]
+
+[node name="TestArea1" type="Node2D"]
+script = ExtResource("1_rjut8")
+
+[node name="Player" parent="." instance=ExtResource("1_dyumo")]
+z_index = 1
+
+[node name="mapa" parent="." instance=ExtResource("3_rs0o6")]
+
+[node name="MainLand" parent="." instance=ExtResource("5_dexcx")]
+position = Vector2(-24, 0)
+
+[node name="MainLandPos" type="Marker2D" parent="."]
+position = Vector2(-16, 127)

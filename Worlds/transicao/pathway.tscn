@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqctp7mykqxgj"]
+
+[ext_resource type="Script" path="res://Worlds/transicao/pathway.gd" id="1_cftwv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46y26"]
+size = Vector2(20, 41)
+
+[node name="Pathway" type="Area2D"]
+script = ExtResource("1_cftwv")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-22, 128.5)
+shape = SubResource("RectangleShape2D_46y26")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

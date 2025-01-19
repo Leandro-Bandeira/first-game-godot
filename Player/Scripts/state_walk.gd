@@ -1,30 +1,33 @@
-class_name State_Walk extends State
+class_name StateWalk extends State
 
-@export var move_speed : float = 100.0
+@export var moveSpeed : float = 75.0
 @onready var idle : State = $"../Idle"
 
-func Enter() -> void:
-	player.UpdateAnimation("walk")
-	pass
-	
-func Exit() -> void:
+func enter() -> void:
+	# Atualiza a animação do jogador para o estado "walk"
+	player.updateAnimation("walk")
+
+func exit() -> void:
+	# Executa ao sair do estado "walk"
 	pass
 
-func Process(_delta: float) -> State:
-	# Se o jogador não estiver se movendo, retorna ao estado idle
-	if player.direction == Vector2.ZERO:
+func process(delta: float) -> State:
+	# Se o jogador não estiver se movendo, retorna ao estado "idle"
+	if player.movementDirection == Vector2.ZERO:
 		return idle
 
-	player.direction = player.direction.normalized()
-	player.velocity = player.direction * move_speed
+	# Normaliza a direção e calcula a velocidade do jogador
+	player.movementDirection = player.movementDirection.normalized()
+	player.velocity = player.movementDirection * moveSpeed
 
-	if player.SetDirection():
-		player.UpdateAnimation("walk")
+	# Atualiza a animação se a direção mudar
+	if player.setDirection():
+		player.updateAnimation("walk")
 
 	return null
 
-func Physics(_delta : float) -> State:
+func physics(delta : float) -> State:
 	return null
-	
-func HandleInput(_envent: InputEvent) -> State:
+
+func handleInput(event: InputEvent) -> State:
 	return null

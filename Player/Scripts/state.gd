@@ -1,21 +1,23 @@
 class_name State extends Node
+#Classe abstrata
 
+# Referência estática para o jogador
 static var player : Player
 
 func _ready() -> void:
-	pass # Replace with function body.
-
-func Enter() -> void:
-	pass
-	
-func Exit() -> void:
 	pass
 
-func Process(_delta : float) -> State:
+func enter() -> void:
+	pass
+
+func exit() -> void:
+	pass
+
+func process(delta : float) -> State:
 	return null
-	
-func Physics(_delta : float) -> State:
+
+func physics(delta : float) -> State:
 	return null
-	
-func HandleInput(_envent: InputEvent) -> State:
+
+func handleInput(event: InputEvent) -> State:
 	return null
