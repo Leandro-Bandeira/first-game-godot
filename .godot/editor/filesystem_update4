@@ -1,4 +1,8 @@
 res://Worlds/MainLand.tscn
-res://Tile Maps/MainLand.tscn
-res://Tile Maps/map_01.tscn
 res://Worlds/TestArea1.tscn
+res://Worlds/TestAreaGelo.tscn
+res://Worlds/House.tscn
+res://Tile Maps/House.tscn
+res://Worlds/transicao/pathway.tscn
+res://Player/player.tscn
+res://Player/Scripts/state_idle.gd

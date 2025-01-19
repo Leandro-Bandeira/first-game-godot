@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmn5g71ikod8g"]
+
+[ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_fqwwi"]
+[ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_601sb"]
+[ext_resource type="PackedScene" uid="uid://bxqnwsi8x8134" path="res://Tile Maps/mapGelo.tscn" id="3_diohv"]
+[ext_resource type="PackedScene" uid="uid://bqctp7mykqxgj" path="res://Worlds/transicao/pathway.tscn" id="4_omlt3"]
+[ext_resource type="Script" path="res://Worlds/transicao/pathwayHouse.gd" id="5_3440k"]
+
+[node name="TestAreaGelo" type="Node2D"]
+script = ExtResource("1_fqwwi")
+
+[node name="Player" parent="." instance=ExtResource("2_601sb")]
+z_index = 1
+
+[node name="mapa" parent="." instance=ExtResource("3_diohv")]
+
+[node name="TestArea1" parent="." instance=ExtResource("4_omlt3")]
+position = Vector2(-89, 92)
+
+[node name="TestArea1Pos" type="Marker2D" parent="."]
+position = Vector2(-16, 127)
+
+[node name="House" parent="." instance=ExtResource("4_omlt3")]
+position = Vector2(313, 31)
+collision_layer = 32
+collision_mask = 32
+script = ExtResource("5_3440k")
+
+[node name="HousePos" type="Marker2D" parent="."]
+position = Vector2(336, 128)

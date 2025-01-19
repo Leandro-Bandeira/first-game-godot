@@ -14,7 +14,13 @@ z_index = 1
 [node name="mapa" parent="." instance=ExtResource("3_rs0o6")]
 
 [node name="MainLand" parent="." instance=ExtResource("5_dexcx")]
-position = Vector2(-24, 0)
+position = Vector2(-89, 92)
 
 [node name="MainLandPos" type="Marker2D" parent="."]
 position = Vector2(-16, 127)
+
+[node name="TestAreaGelo" parent="." instance=ExtResource("5_dexcx")]
+position = Vector2(587, 113)
+
+[node name="TestAreaGeloPos" type="Marker2D" parent="."]
+position = Vector2(583, 150)
