@@ -2,6 +2,7 @@ class_name Player extends CharacterBody2D
 
 # Direção cardinal para onde o jogador está virado (inicialmente para baixo)
 var cardinalDirection : Vector2 = Vector2.DOWN
+const DIR_4 = [Vector2.RIGHT, Vector2.DOWN, Vector2.LEFT, Vector2.UP]
 # Vetor de direção do movimento atual do jogador
 var movementDirection : Vector2 = Vector2.ZERO
 
@@ -23,28 +24,25 @@ func _physics_process(delta):
 	move_and_slide()
 
 func setDirection() -> bool:
-	# Atualiza a direção cardinal baseada no vetor de movimento
-	var newDirection : Vector2 = cardinalDirection
-
-	# Se o jogador não estiver se movendo, não muda a direção
+	# Verifica se o jogador não está se movendo
 	if movementDirection == Vector2.ZERO:
-		return false
+		return false  
 
-	# Determina a nova direção com base no eixo predominante
-	if movementDirection.y == 0:
-		newDirection = Vector2.LEFT if movementDirection.x < 0 else Vector2.RIGHT
-	elif movementDirection.x == 0:
-		newDirection = Vector2.UP if movementDirection.y < 0 else Vector2.DOWN
+	# Calcula o ID da direção com base no ângulo de movementDirection
+	var directionID : int = int(round((movementDirection).angle() / TAU * DIR_4.size()))
+	var newDirection = DIR_4[directionID]  # Obtém a nova direção usando o ID
 
-	# Se a direção não mudou, retorna falso
+	# Verifica se a nova direção é igual à direção atual
 	if newDirection == cardinalDirection:
-		return false
+		return false  
 
-	# Atualiza a direção cardinal e ajusta a escala do sprite
+	# Atualiza a direção cardinal
 	cardinalDirection = newDirection
+
+	# Ajusta a escala do sprite com base na direção (inverte no eixo X se for esquerda)
 	sprite.scale.x = -1 if cardinalDirection == Vector2.LEFT else 1
 
-	return true
+	return true  
 
 func updateAnimation(state : String) -> void:
 	# Atualiza a animação com base no estado e na direção

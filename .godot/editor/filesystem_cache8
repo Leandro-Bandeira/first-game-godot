@@ -1,24 +1,26 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737321460
-::res://Player/::1737321410
-player.tscn::PackedScene::6247894841600899493::1737321410::0::1::::<><>::res://Player/Scripts/player.gd<>uid://2bhbm0wtlvmi::::res://Player/Sprites/Player/spritesheet.png<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/player_state_machine.gd<>res://Player/Scripts/state_walk.gd
-::res://Player/Scripts/::1737321398
-player.gd::GDScript::-1::1737320212::0::1::::Player<>CharacterBody2D<>::
+::res://::1737376014
+::res://Player/::1737375692
+player.tscn::PackedScene::6247894841600899493::1737373609::0::1::::<><>::res://Player/Scripts/player.gd<>uid://2bhbm0wtlvmi::::res://Player/Sprites/Player/spritesheet.png<>res://Player/Scripts/state_idle.gd<>res://Player/Scripts/player_state_machine.gd<>res://Player/Scripts/state_walk.gd
+::res://Player/reduced_vision/::1737375945
+light.tscn::PackedScene::6761638066499965836::1737375945::0::1::::<><>::uid://udqlr15774ua::::res://Tile Maps/sprite/TextureLight/light.png
+::res://Player/Scripts/::1737333847
+player.gd::GDScript::-1::1737333847::0::1::::Player<>CharacterBody2D<>::
 player_state_machine.gd::GDScript::-1::1737309517::0::1::::PlayerStateMachine<>Node<>::
 state.gd::GDScript::-1::1737309392::0::1::::State<>Node<>::
-state_idle.gd::GDScript::-1::1737321398::0::1::::StateIdle<>State<>::
+state_idle.gd::GDScript::-1::1737321696::0::1::::StateIdle<>State<>::
 state_walk.gd::GDScript::-1::1737321079::0::1::::StateWalk<>State<>::
 ::res://Player/Sprites/::1736819361
 ::res://Player/Sprites/Player/::1736881267
 Red_Girl_Idle.png::CompressedTexture2D::6298339535064235837::1721923352::1736819327::1::::<><>::
 Red_Girl_Walk.png::CompressedTexture2D::1930597921903613356::1721922922::1736819327::1::::<><>::
 spritesheet.png::CompressedTexture2D::1897590630649943164::1736881245::1736881267::1::::<><>::
-::res://Tile Maps/::1737321410
-House.tscn::PackedScene::1755195479760233160::1737321410::0::1::::<><>::uid://8mnaeifq0tuv::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://cmxr35jbn0k6q::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png<>uid://dsybua4i2tcgh::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Struct.png<>uid://baqw78381g4iu::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png<>uid://ccp6ksqtsljim::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png
+::res://Tile Maps/::1737375945
+House.tscn::PackedScene::1755195479760233160::1737375945::0::1::::<><>::uid://8mnaeifq0tuv::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://cmxr35jbn0k6q::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png<>uid://dsybua4i2tcgh::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Struct.png<>uid://baqw78381g4iu::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png<>uid://ccp6ksqtsljim::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png
 MainLand.tscn::PackedScene::2288678906345338952::1737317275::0::1::::<><>::uid://mp86pof2cajm::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Plant.png<>uid://cmxr35jbn0k6q::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png<>uid://dsybua4i2tcgh::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Struct.png<>uid://8mnaeifq0tuv::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://ccp6ksqtsljim::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png<>uid://baqw78381g4iu::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png
 mapGelo.tscn::PackedScene::4034623699114844757::1737317275::0::1::::<><>::uid://8mnaeifq0tuv::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://baqw78381g4iu::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png<>uid://ccp6ksqtsljim::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png<>uid://b5drc4pevo8qy::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX_Tileset_Snow.png<>uid://jwo5q8645nxy::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/house.png<>uid://ifhd0nrilg6p::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/house(1).png<>uid://cmxr35jbn0k6q::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png<>uid://dsybua4i2tcgh::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Struct.png
 map_01.tscn::PackedScene::4047211127443479647::1737313680::0::1::::<><>::uid://8mnaeifq0tuv::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png<>uid://baqw78381g4iu::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png<>uid://ccp6ksqtsljim::::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png
-::res://Tile Maps/sprite/::1737068101
+::res://Tile Maps/sprite/::1737375162
 ::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/::1737305972
 ::res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/::1737315620
 house(1).png::CompressedTexture2D::572264348155382141::1737315578::1737315620::1::::<><>::
@@ -34,16 +36,18 @@ TX Tileset Wall.png::CompressedTexture2D::2420845425063338120::1611444778::17370
 TX_Tileset_Snow.png::CompressedTexture2D::4499316433120705724::1737314809::1737314865::1::::<><>::
 ::res://Tile Maps/sprite/sheet/::1737068107
 spritesheet.png::CompressedTexture2D::97124251385841047::1737068067::1737068107::1::::<><>::
-::res://Worlds/::1737321410
-House.tscn::PackedScene::7080892546293292863::1737321410::0::1::::<><>::res://Worlds/transicao/levels.gd<>uid://cvar6d8rfgrd2::::res://Player/player.tscn<>uid://0ah2v7wayh6o::::res://Tile Maps/House.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn<>res://Worlds/transicao/pathwayHouse.gd
-MainLand.tscn::PackedScene::1967039647821842116::1737321410::0::1::::<><>::res://Worlds/transicao/levels.gd<>uid://cvar6d8rfgrd2::::res://Player/player.tscn<>uid://7uwhbscvd0jk::::res://Tile Maps/MainLand.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn
-TestArea1.tscn::PackedScene::8551811499473664568::1737321410::0::1::::<><>::uid://cvar6d8rfgrd2::::res://Player/player.tscn<>res://Worlds/transicao/levels.gd<>uid://bxwq8ghj5lr5h::::res://Tile Maps/map_01.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn
-TestAreaGelo.tscn::PackedScene::5643778347681312132::1737321410::0::1::::<><>::res://Worlds/transicao/levels.gd<>uid://cvar6d8rfgrd2::::res://Player/player.tscn<>uid://bxqnwsi8x8134::::res://Tile Maps/mapGelo.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn<>res://Worlds/transicao/pathwayHouse.gd
-::res://Worlds/transicao/::1737321410
+::res://Tile Maps/sprite/TextureLight/::1737375168
+light.png::CompressedTexture2D::1410962056109028956::1737375129::1737375168::1::::<><>::
+::res://Worlds/::1737375945
+House.tscn::PackedScene::7080892546293292863::1737375945::0::1::::<><>::res://Worlds/transicao/levels.gd<>uid://cvar6d8rfgrd2::::res://Player/player.tscn<>uid://0ah2v7wayh6o::::res://Tile Maps/House.tscn<>uid://c3lngq4yqbefk::::res://Player/reduced_vision/light.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn<>res://Worlds/transicao/pathwayHouse.gd
+MainLand.tscn::PackedScene::1967039647821842116::1737373609::0::1::::<><>::res://Worlds/transicao/levels.gd<>uid://cvar6d8rfgrd2::::res://Player/player.tscn<>uid://7uwhbscvd0jk::::res://Tile Maps/MainLand.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn
+TestArea1.tscn::PackedScene::8551811499473664568::1737373609::0::1::::<><>::uid://cvar6d8rfgrd2::::res://Player/player.tscn<>res://Worlds/transicao/levels.gd<>uid://bxwq8ghj5lr5h::::res://Tile Maps/map_01.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn
+TestAreaGelo.tscn::PackedScene::5643778347681312132::1737373609::0::1::::<><>::res://Worlds/transicao/levels.gd<>uid://cvar6d8rfgrd2::::res://Player/player.tscn<>uid://bxqnwsi8x8134::::res://Tile Maps/mapGelo.tscn<>uid://bqctp7mykqxgj::::res://Worlds/transicao/pathway.tscn<>res://Worlds/transicao/pathwayHouse.gd
+::res://Worlds/transicao/::1737321793
 global.gd::GDScript::-1::1737309154::0::1::::<>Node<>::
 levels.gd::GDScript::-1::1737308764::0::1::::<>Node<>::
 pathway.gd::GDScript::-1::1737318818::0::1::::<>Area2D<>::
-pathway.tscn::PackedScene::3514753047570201809::1737321410::0::1::::<><>::res://Worlds/transicao/pathway.gd
+pathway.tscn::PackedScene::3514753047570201809::1737321793::0::1::::<><>::res://Worlds/transicao/pathway.gd
 pathwayHouse.gd::GDScript::-1::1737318945::0::1::::<>Area2D<>::
 transition_screen.gd::GDScript::-1::1737309346::0::1::::<>CanvasLayer<>::
 transition_screen.tscn::PackedScene::2048604380170704079::1737305815::0::1::::<><>::res://Worlds/transicao/transition_screen.gd

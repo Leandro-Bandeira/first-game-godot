@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c75bjbfkvojn8"]
+[gd_scene load_steps=7 format=3 uid="uid://c75bjbfkvojn8"]
 
 [ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_kkdr2"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_m6t3a"]
 [ext_resource type="PackedScene" uid="uid://0ah2v7wayh6o" path="res://Tile Maps/House.tscn" id="3_j2m25"]
+[ext_resource type="PackedScene" uid="uid://c3lngq4yqbefk" path="res://Player/reduced_vision/light.tscn" id="3_na55t"]
 [ext_resource type="PackedScene" uid="uid://bqctp7mykqxgj" path="res://Worlds/transicao/pathway.tscn" id="4_5jhkw"]
 [ext_resource type="Script" path="res://Worlds/transicao/pathwayHouse.gd" id="5_m85q2"]
 
@@ -12,6 +13,9 @@ script = ExtResource("1_kkdr2")
 [node name="Player" parent="." instance=ExtResource("2_m6t3a")]
 z_index = 1
 position = Vector2(164, 140)
+
+[node name="Light" parent="Player" instance=ExtResource("3_na55t")]
+position = Vector2(-162, -143)
 
 [node name="House" parent="." instance=ExtResource("3_j2m25")]
 

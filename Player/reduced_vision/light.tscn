@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3lngq4yqbefk"]
+
+[ext_resource type="Texture2D" uid="uid://udqlr15774ua" path="res://Tile Maps/sprite/TextureLight/light.png" id="1_2w4ep"]
+
+[node name="Light" type="Node2D"]
+position = Vector2(2, -3)
+
+[node name="brightness" type="CanvasModulate" parent="."]
+position = Vector2(22, 22)
+color = Color(0, 0, 0, 1)
+
+[node name="textureLight" type="PointLight2D" parent="."]
+position = Vector2(179.066, 139.438)
+scale = Vector2(0.273178, 0.228271)
+energy = 0.7
+texture = ExtResource("1_2w4ep")
+
+[node name="shadow" type="PointLight2D" parent="."]
+position = Vector2(180, 137)
+scale = Vector2(0.347046, 0.269409)
+energy = 0.5
+shadow_enabled = true
+shadow_filter = 1
+shadow_filter_smooth = 3.0
+texture = ExtResource("1_2w4ep")
+texture_scale = 0.5

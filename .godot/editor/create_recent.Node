@@ -1,5 +1,7 @@
-TileMapLayer
+PointLight2D
+CanvasModulate
 Node2D
+TileMapLayer
 AnimationPlayer
 ColorRect
 CanvasLayer
@@ -11,4 +13,3 @@ TileMap
 Node
 AnimatedSprite2D
 Sprite2D
-CharacterBody2D
