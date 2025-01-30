@@ -6,10 +6,11 @@ var direction : Vector2 = Vector2.ZERO
 @onready var animationPlayer : AnimationPlayer = $AnimationPlayer
 @onready var sprite : Sprite2D = $Sprite2D
 @onready var state_machine : PlayerStateMachine = $StateMachine
-
+@onready var has_key: bool = false
 
 func _ready() -> void:
 	state_machine.Initialize(self)
+	init_itens()
 	pass 
 
 func _process(delta):
@@ -50,3 +51,5 @@ func AnimDirection() -> String:
 	else:
 		return "side"
 		
+func init_itens() -> void:
+	has_key = false

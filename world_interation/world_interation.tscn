@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://drwb3qsx87fjh"]
+
+[ext_resource type="Texture2D" uid="uid://cefhm3eagynl4" path="res://assets/sprites/Medieval_props_free.png" id="1_udraw"]
+[ext_resource type="Script" path="res://world_interation/door.gd" id="2_761h1"]
+[ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_lfh1e"]
+[ext_resource type="Texture2D" uid="uid://bbkrgy3setc0d" path="res://assets/sprites/Icons_07.png" id="7_1iqkv"]
+[ext_resource type="Script" path="res://world_interation/scripts/key.gd" id="7_bsult"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqnbn"]
+size = Vector2(53, 68)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl2bm"]
+size = Vector2(40, 44)
+
+[node name="World_interation" type="Node2D"]
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_lfh1e")]
+collision_layer = 3
+collision_mask = 3
+
+[node name="Door" type="Area2D" parent="."]
+position = Vector2(249, 136)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("2_761h1")
+
+[node name="Door_closed" type="Sprite2D" parent="Door"]
+position = Vector2(3.5, -73)
+texture = ExtResource("1_udraw")
+region_enabled = true
+region_rect = Rect2(67, 22, 53, 72)
+
+[node name="Door_open" type="Sprite2D" parent="Door"]
+visible = false
+position = Vector2(2, -73)
+texture = ExtResource("1_udraw")
+region_enabled = true
+region_rect = Rect2(124.11, 28.61, 54.45, 59.29)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(5, -73)
+shape = SubResource("RectangleShape2D_fqnbn")
+
+[node name="key" type="Area2D" parent="."]
+collision_layer = 0
+script = ExtResource("7_bsult")
+
+[node name="sprite_key" type="Sprite2D" parent="key"]
+position = Vector2(422, 188)
+rotation = -1.45037
+texture = ExtResource("7_1iqkv")
+region_rect = Rect2(3.89996, 5.10999, 31.46, 25.41)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="key"]
+position = Vector2(424, 190)
+shape = SubResource("RectangleShape2D_tl2bm")
+
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
+[connection signal="body_exited" from="Door" to="Door" method="_on_body_exited"]
+[connection signal="body_entered" from="key" to="key" method="_on_body_entered"]

@@ -1,10 +1,10 @@
 [gd_scene load_steps=15 format=3 uid="uid://cvar6d8rfgrd2"]
 
-[ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_6x0l6"]
-[ext_resource type="Texture2D" uid="uid://2bhbm0wtlvmi" path="res://Player/Sprites/Player/spritesheet.png" id="2_380y8"]
-[ext_resource type="Script" path="res://Player/Scripts/state_idle.gd" id="3_ar2ql"]
-[ext_resource type="Script" path="res://Player/Scripts/player_state_machine.gd" id="3_fjhmm"]
-[ext_resource type="Script" path="res://Player/Scripts/state_walk.gd" id="5_6uunf"]
+[ext_resource type="Script" path="res://Player/Scripts/player.gd" id="1_mrr2w"]
+[ext_resource type="Texture2D" uid="uid://2bhbm0wtlvmi" path="res://Player/Sprites/Player/spritesheet.png" id="2_dkwcm"]
+[ext_resource type="Script" path="res://Player/Scripts/player_state_machine.gd" id="3_by5a0"]
+[ext_resource type="Script" path="res://Player/Scripts/state_idle.gd" id="4_wk8me"]
+[ext_resource type="Script" path="res://Player/Scripts/state_walk.gd" id="5_f86g7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xjfnj"]
 
@@ -138,14 +138,14 @@ _data = {
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(249, 136)
-script = ExtResource("1_6x0l6")
+script = ExtResource("1_mrr2w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_xjfnj")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("2_380y8")
+texture = ExtResource("2_dkwcm")
 hframes = 9
 vframes = 4
 
@@ -155,10 +155,10 @@ libraries = {
 }
 
 [node name="StateMachine" type="Node" parent="."]
-script = ExtResource("3_fjhmm")
+script = ExtResource("3_by5a0")
 
 [node name="Idle" type="Node" parent="StateMachine"]
-script = ExtResource("3_ar2ql")
+script = ExtResource("4_wk8me")
 
 [node name="Walk" type="Node" parent="StateMachine"]
-script = ExtResource("5_6uunf")
+script = ExtResource("5_f86g7")
