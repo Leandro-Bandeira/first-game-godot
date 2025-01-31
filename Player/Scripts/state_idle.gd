@@ -4,10 +4,10 @@ class_name StateIdle extends State
 
 func enter() -> void:
 	# Atualiza a animação do jogador para o estado "idle"
-	if(getParentN(3).name.to_lower().find("gelo") != -1):
-		player.updateAnimation("idleCold")
-	else:
-		player.updateAnimation("idle")
+	#if(getParentN(3).name.to_lower().find("gelo") != -1):
+	#	player.updateAnimation("idleCold")
+	#else:
+	player.updateAnimation("idle")
 
 	
 # Função para pegar um nó "mais acima" (n parent)

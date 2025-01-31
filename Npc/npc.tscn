@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dggrd0phu453d"]
+
+[ext_resource type="Script" path="res://Npc/npc.gd" id="1_7o7dn"]
+[ext_resource type="Texture2D" uid="uid://cvy7y5ektfj86" path="res://Player/Sprites/Player/Red_Girl_Idle.png" id="2_vwh5i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w87fh"]
+radius = 8.0
+height = 16.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvjw0"]
+size = Vector2(53, 57)
+
+[node name="npc" type="CharacterBody2D"]
+script = ExtResource("1_7o7dn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vwh5i")
+hframes = 3
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_w87fh")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0.5, -4.5)
+shape = SubResource("RectangleShape2D_lvjw0")
+debug_color = Color(0.658824, 0.513726, 0.105882, 0.109804)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://baqw78381g4iu" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Wall.png" id="2_io06a"]
 [ext_resource type="Texture2D" uid="uid://ccp6ksqtsljim" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Stone Ground.png" id="3_r604a"]
 [ext_resource type="Texture2D" uid="uid://b5drc4pevo8qy" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX_Tileset_Snow.png" id="4_17lde"]
-[ext_resource type="Texture2D" uid="uid://jwo5q8645nxy" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/house.png" id="5_mr07j"]
-[ext_resource type="Texture2D" uid="uid://ifhd0nrilg6p" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/house(1).png" id="6_uby0a"]
+[ext_resource type="Texture2D" uid="uid://ifhd0nrilg6p" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/house.png" id="5_mr07j"]
+[ext_resource type="Texture2D" uid="uid://ifhd0nrilg6p" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/house.png" id="6_uby0a"]
 [ext_resource type="Texture2D" uid="uid://cmxr35jbn0k6q" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png" id="7_y3ds6"]
 [ext_resource type="Texture2D" uid="uid://dsybua4i2tcgh" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Struct.png" id="8_d3o6k"]
 

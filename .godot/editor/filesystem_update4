@@ -1,3 +1,8 @@
-res://Worlds/House.tscn
+res://Worlds/MainLand.tscn
+res://Npc/dialogueStyle.tres
+res://Npc/NPC.dch
+res://Worlds/TestAreaGelo.tscn
 res://Tile Maps/House.tscn
-res://Player/reduced_vision/light.tscn
+res://Worlds/House.tscn
+res://Player/player.tscn
+res://Player/Scripts/state_idle.gd

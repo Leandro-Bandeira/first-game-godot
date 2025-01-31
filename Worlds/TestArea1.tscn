@@ -1,12 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dt3tc6mu3bxpw"]
+[gd_scene load_steps=6 format=3 uid="uid://dt3tc6mu3bxpw"]
 
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="1_dyumo"]
 [ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_rjut8"]
+[ext_resource type="AudioStream" uid="uid://b3tfmo5chu77y" path="res://example_music/example_music_01.ogg" id="2_tgf5b"]
 [ext_resource type="PackedScene" uid="uid://bxwq8ghj5lr5h" path="res://Tile Maps/map_01.tscn" id="3_rs0o6"]
 [ext_resource type="PackedScene" uid="uid://bqctp7mykqxgj" path="res://Worlds/transicao/pathway.tscn" id="5_dexcx"]
 
 [node name="TestArea1" type="Node2D"]
 script = ExtResource("1_rjut8")
+music = ExtResource("2_tgf5b")
 
 [node name="Player" parent="." instance=ExtResource("1_dyumo")]
 z_index = 1
