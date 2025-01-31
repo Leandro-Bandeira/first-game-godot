@@ -1,8 +1,12 @@
 res://Worlds/MainLand.tscn
 res://Npc/dialogueStyle.tres
-res://Npc/NPC.dch
 res://Worlds/TestAreaGelo.tscn
 res://Tile Maps/House.tscn
 res://Worlds/House.tscn
 res://Player/player.tscn
-res://Player/Scripts/state_idle.gd
+res://Player/Scripts/player.gd
+res://world_interation/world_interation.tscn
+res://world_interation/door.gd
+res://main_menu/main_menu.gd
+res://Worlds/key.gd
+res://Worlds/door.gd

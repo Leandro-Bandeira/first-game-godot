@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce8sfw10dewqo"]
+
+[ext_resource type="Script" path="res://options_menu/hotkey_rebind_button.gd" id="1_b1sq7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5hf0v"]
+
+[node name="Hotkey_Rebind_Button" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b1sq7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 350.0
+offset_bottom = 15.5
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(50, 30)
+layout_mode = 2
+text = "Key"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_5hf0v")
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+toggle_mode = true
+text = "Action_key"
+alignment = 0

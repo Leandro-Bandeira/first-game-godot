@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://3a34dc7q7ank"]
+[gd_scene load_steps=14 format=3 uid="uid://3a34dc7q7ank"]
 
 [ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_3lpu1"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="1_gd2bu"]
@@ -6,6 +6,19 @@
 [ext_resource type="PackedScene" uid="uid://7uwhbscvd0jk" path="res://Tile Maps/MainLand.tscn" id="2_p7amx"]
 [ext_resource type="PackedScene" uid="uid://bqctp7mykqxgj" path="res://Worlds/transicao/pathway.tscn" id="3_0xu8a"]
 [ext_resource type="PackedScene" uid="uid://dggrd0phu453d" path="res://Npc/npc.tscn" id="6_6v2sf"]
+[ext_resource type="Script" path="res://Worlds/key.gd" id="7_ehy1l"]
+[ext_resource type="Texture2D" uid="uid://bkvwucym7pqm8" path="res://assets/sprites/1px All.png" id="8_xs4fr"]
+[ext_resource type="Script" path="res://Worlds/door.gd" id="9_fvxsg"]
+[ext_resource type="Texture2D" uid="uid://cmxr35jbn0k6q" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png" id="10_gxlp4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3wej4"]
+size = Vector2(20, 19)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qll0h"]
+size = Vector2(49, 53)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2dtp7"]
+size = Vector2(48, 48.5)
 
 [node name="MainLand" type="Node2D"]
 script = ExtResource("1_3lpu1")
@@ -14,8 +27,8 @@ music = ExtResource("2_on0mg")
 [node name="Player" parent="." instance=ExtResource("1_gd2bu")]
 z_index = 1
 position = Vector2(164, 140)
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 5
 
 [node name="welcome_land" parent="." instance=ExtResource("2_p7amx")]
 
@@ -27,3 +40,53 @@ position = Vector2(524, 191)
 
 [node name="npc" parent="." instance=ExtResource("6_6v2sf")]
 position = Vector2(13, 203)
+
+[node name="key" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("7_ehy1l")
+
+[node name="sprite_key" type="Sprite2D" parent="key"]
+position = Vector2(263, 148)
+texture = ExtResource("8_xs4fr")
+region_enabled = true
+region_rect = Rect2(210.005, 15.0263, 19.1921, 10.725)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="key"]
+position = Vector2(264, 150)
+shape = SubResource("RectangleShape2D_3wej4")
+
+[node name="Door" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("9_fvxsg")
+
+[node name="Door_open" type="Sprite2D" parent="Door"]
+visible = false
+position = Vector2(61.5, 36)
+scale = Vector2(1.31373, 1)
+texture = ExtResource("10_gxlp4")
+region_enabled = true
+region_rect = Rect2(20.9999, 164, 51, 60)
+
+[node name="Door_closed" type="Sprite2D" parent="Door"]
+position = Vector2(64, 31)
+scale = Vector2(1.2766, 1)
+texture = ExtResource("10_gxlp4")
+region_enabled = true
+region_rect = Rect2(24, 98, 47, 59)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(62.5, 30.5)
+shape = SubResource("RectangleShape2D_qll0h")
+
+[node name="Door_blocker" type="StaticBody2D" parent="Door"]
+position = Vector2(60, 33)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/Door_blocker"]
+position = Vector2(3, -2.25)
+shape = SubResource("RectangleShape2D_2dtp7")
+debug_color = Color(0, 0, 0, 0.42)
+
+[connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]

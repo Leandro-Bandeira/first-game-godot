@@ -6,6 +6,7 @@ const DIR_4 = [Vector2.RIGHT, Vector2.DOWN, Vector2.LEFT, Vector2.UP]
 # Vetor de direção do movimento atual do jogador
 var movementDirection : Vector2 = Vector2.ZERO
 
+@onready var has_key: bool = false
 @onready var animationPlayer : AnimationPlayer = $AnimationPlayer
 @onready var sprite : Sprite2D = $Sprite2D
 @onready var stateMachine : PlayerStateMachine = $StateMachine
@@ -13,6 +14,7 @@ var movementDirection : Vector2 = Vector2.ZERO
 func _ready() -> void:
 	# Inicializa a máquina de estados do jogador
 	stateMachine.initialize(self)
+	init_itens()
 
 func _process(delta):
 	# Calcula a direção do movimento com base nas teclas pressionadas
@@ -56,3 +58,6 @@ func getAnimDirection() -> String:
 		return "up"
 	else:
 		return "side"
+
+func init_itens() -> void:
+	has_key = false
