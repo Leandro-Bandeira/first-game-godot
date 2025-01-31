@@ -40,6 +40,8 @@ position = Vector2(524, 191)
 
 [node name="npc" parent="." instance=ExtResource("6_6v2sf")]
 position = Vector2(13, 203)
+collision_layer = 3
+collision_mask = 3
 
 [node name="key" type="Area2D" parent="."]
 collision_mask = 2
