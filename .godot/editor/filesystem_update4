@@ -1,6 +1,13 @@
+res://Tile Maps/estante_3.gd
 res://Tile Maps/map_biblioteca.tscn
 res://Npc/dialogueStyle.tres
-res://Worlds/key.dch
 res://Worlds/MainLand.tscn
-res://Tile Maps/House.tscn
 res://Worlds/biblioteca.tscn
+res://Tile Maps/estante_4.gd
+res://Tile Maps/estante_5.gd
+res://Tile Maps/estante_6.gd
+res://Worlds/key.gd
+res://Tile Maps/door.gd
+res://Worlds/door.gd
+res://Tile Maps/biblioteca_1.gd
+res://Tile Maps/estante_2.gd

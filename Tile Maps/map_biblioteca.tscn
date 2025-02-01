@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://pe2ox3jl24m"]
+[gd_scene load_steps=35 format=4 uid="uid://pe2ox3jl24m"]
 
 [ext_resource type="Texture2D" uid="uid://bptyaw13847e5" path="res://assets/biblioteca/chao_parede2.png" id="1_pbogg"]
 [ext_resource type="Texture2D" uid="uid://ctqhikthecjrk" path="res://assets/biblioteca/Full.png" id="2_jg7gw"]
@@ -8,9 +8,14 @@
 [ext_resource type="Texture2D" uid="uid://dnspnspba8vgf" path="res://assets/biblioteca/Fantasy Interior Tiles/Tiles/8.png" id="6_5l1wb"]
 [ext_resource type="Texture2D" uid="uid://c53re426erlnm" path="res://assets/biblioteca/Fantasy Interior Tiles/Tiles/Chair ( Side ).png" id="7_5ntxt"]
 [ext_resource type="Texture2D" uid="uid://b7yeeadks2d2s" path="res://assets/biblioteca/Fantasy Interior Tiles/Full.png" id="7_616fq"]
+[ext_resource type="Script" path="res://Tile Maps/biblioteca_1.gd" id="8_cm7df"]
 [ext_resource type="Texture2D" uid="uid://cvqgixsv44vob" path="res://assets/biblioteca/Fantasy Interior Tiles/Tiles/Bookshelf.png" id="9_r0sau"]
+[ext_resource type="Script" path="res://Tile Maps/estante_2.gd" id="9_v0385"]
+[ext_resource type="Script" path="res://Tile Maps/estante_3.gd" id="10_jw31f"]
 [ext_resource type="Texture2D" uid="uid://c8de3g1brret0" path="res://assets/biblioteca/Fantasy Interior Tiles/Tiles/Door.png" id="10_xlois"]
-[ext_resource type="Texture2D" uid="uid://c1jhvn281joo1" path="res://assets/biblioteca/Fantasy Interior Tiles/Tiles/Door ( Opened ).png" id="11_i8qy3"]
+[ext_resource type="Script" path="res://Tile Maps/estante_4.gd" id="11_pfnue"]
+[ext_resource type="Script" path="res://Tile Maps/estante_5.gd" id="12_e8xhx"]
+[ext_resource type="Script" path="res://Tile Maps/estante_6.gd" id="13_ws2vk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1o2vi"]
 texture = ExtResource("1_pbogg")
@@ -1106,186 +1111,6 @@ sources/4 = SubResource("TileSetAtlasSource_6pohw")
 sources/5 = SubResource("TileSetAtlasSource_joect")
 sources/7 = SubResource("TileSetAtlasSource_xnpdh")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_woglv"]
-texture = ExtResource("11_i8qy3")
-0:0/0 = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yrccb"]
-texture = ExtResource("7_616fq")
-12:0/0 = 0
-13:0/0 = 0
-14:0/0 = 0
-15:0/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-7:1/0 = 0
-8:1/0 = 0
-12:1/0 = 0
-13:1/0 = 0
-14:1/0 = 0
-15:1/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-4:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-7:2/0 = 0
-8:2/0 = 0
-12:2/0 = 0
-13:2/0 = 0
-14:2/0 = 0
-15:2/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-4:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-7:3/0 = 0
-8:3/0 = 0
-12:3/0 = 0
-13:3/0 = 0
-14:3/0 = 0
-15:3/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-7:4/0 = 0
-8:4/0 = 0
-12:4/0 = 0
-13:4/0 = 0
-14:4/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-6:5/0 = 0
-7:5/0 = 0
-8:5/0 = 0
-12:5/0 = 0
-13:5/0 = 0
-14:5/0 = 0
-1:6/0 = 0
-2:6/0 = 0
-3:6/0 = 0
-4:6/0 = 0
-5:6/0 = 0
-6:6/0 = 0
-7:6/0 = 0
-8:6/0 = 0
-10:6/0 = 0
-11:6/0 = 0
-12:6/0 = 0
-1:7/0 = 0
-2:7/0 = 0
-3:7/0 = 0
-4:7/0 = 0
-5:7/0 = 0
-6:7/0 = 0
-7:7/0 = 0
-8:7/0 = 0
-10:7/0 = 0
-11:7/0 = 0
-12:7/0 = 0
-1:8/0 = 0
-2:8/0 = 0
-3:8/0 = 0
-4:8/0 = 0
-5:8/0 = 0
-6:8/0 = 0
-7:8/0 = 0
-8:8/0 = 0
-13:8/0 = 0
-14:8/0 = 0
-15:8/0 = 0
-13:9/0 = 0
-14:9/0 = 0
-15:9/0 = 0
-0:10/0 = 0
-1:10/0 = 0
-2:10/0 = 0
-3:10/0 = 0
-4:10/0 = 0
-5:10/0 = 0
-6:10/0 = 0
-7:10/0 = 0
-13:10/0 = 0
-14:10/0 = 0
-15:10/0 = 0
-0:11/0 = 0
-3:11/0 = 0
-4:11/0 = 0
-5:11/0 = 0
-6:11/0 = 0
-7:11/0 = 0
-0:12/0 = 0
-3:12/0 = 0
-4:12/0 = 0
-5:12/0 = 0
-6:12/0 = 0
-7:12/0 = 0
-8:12/0 = 0
-9:12/0 = 0
-10:12/0 = 0
-11:12/0 = 0
-12:12/0 = 0
-13:12/0 = 0
-14:12/0 = 0
-15:12/0 = 0
-0:13/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-3:13/0 = 0
-4:13/0 = 0
-5:13/0 = 0
-6:13/0 = 0
-7:13/0 = 0
-8:13/0 = 0
-9:13/0 = 0
-10:13/0 = 0
-11:13/0 = 0
-12:13/0 = 0
-13:13/0 = 0
-14:13/0 = 0
-15:13/0 = 0
-0:14/0 = 0
-1:14/0 = 0
-2:14/0 = 0
-3:14/0 = 0
-4:14/0 = 0
-5:14/0 = 0
-10:14/0 = 0
-11:14/0 = 0
-12:14/0 = 0
-13:14/0 = 0
-14:14/0 = 0
-15:14/0 = 0
-0:15/0 = 0
-1:15/0 = 0
-2:15/0 = 0
-3:15/0 = 0
-4:15/0 = 0
-5:15/0 = 0
-10:15/0 = 0
-11:15/0 = 0
-12:15/0 = 0
-13:15/0 = 0
-14:15/0 = 0
-15:15/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_jpeu0"]
-sources/0 = SubResource("TileSetAtlasSource_woglv")
-sources/1 = SubResource("TileSetAtlasSource_yrccb")
-
 [node name="map_biblioteca" type="Node2D"]
 
 [node name="ground" type="TileMapLayer" parent="."]
@@ -1300,50 +1125,62 @@ tile_set = SubResource("TileSet_0fdgs")
 [node name="Estantes" type="Node2D" parent="."]
 position = Vector2(7, -6)
 
-[node name="Area2D" type="Area2D" parent="Estantes"]
+[node name="Estante1" type="Area2D" parent="Estantes"]
 position = Vector2(-6, -33)
+collision_mask = 3
+script = ExtResource("8_cm7df")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Estante1"]
 position = Vector2(31, 39)
 shape = SubResource("RectangleShape2D_qcwtm")
 debug_color = Color(0.960784, 0.133333, 0.376471, 0.168627)
 
-[node name="Area2D2" type="Area2D" parent="Estantes"]
+[node name="Estante2" type="Area2D" parent="Estantes"]
 position = Vector2(39, -33)
+collision_mask = 3
+script = ExtResource("9_v0385")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Area2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Estante2"]
 position = Vector2(34.25, 38.75)
 shape = SubResource("RectangleShape2D_qcwtm")
 debug_color = Color(0.994119, 0, 0.22716, 0.42)
 
-[node name="Area2D3" type="Area2D" parent="Estantes"]
+[node name="Estante3" type="Area2D" parent="Estantes"]
 position = Vector2(84, -33)
+collision_mask = 3
+script = ExtResource("10_jw31f")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Area2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Estante3"]
 position = Vector2(37, 38.75)
 shape = SubResource("RectangleShape2D_qcwtm")
 debug_color = Color(0.997056, 0, 0.174189, 0.42)
 
-[node name="Area2D5" type="Area2D" parent="Estantes"]
+[node name="Estante4" type="Area2D" parent="Estantes"]
 position = Vector2(382, -33)
+collision_mask = 3
+script = ExtResource("11_pfnue")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Estantes/Area2D5"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Estantes/Estante4"]
 position = Vector2(11, 38.75)
 shape = SubResource("RectangleShape2D_qcwtm")
 debug_color = Color(0.997056, 0, 0.174189, 0.42)
 
-[node name="Area2D4" type="Area2D" parent="Estantes"]
+[node name="Estante5" type="Area2D" parent="Estantes"]
 position = Vector2(426, -33)
+collision_mask = 3
+script = ExtResource("12_e8xhx")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Area2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Estante5"]
 position = Vector2(15, 38.75)
 shape = SubResource("RectangleShape2D_qcwtm")
 debug_color = Color(0.955362, 0.163608, 0.348812, 0.42)
 
-[node name="Area2D6" type="Area2D" parent="Estantes"]
+[node name="Estante6" type="Area2D" parent="Estantes"]
 position = Vector2(335, -32)
+collision_mask = 3
+script = ExtResource("13_ws2vk")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Area2D6"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Estantes/Estante6"]
 position = Vector2(11, 37.75)
 shape = SubResource("RectangleShape2D_qcwtm")
 debug_color = Color(0.957896, 0.186766, 0.22861, 0.42)
@@ -1352,7 +1189,15 @@ debug_color = Color(0.957896, 0.186766, 0.22861, 0.42)
 tile_map_data = PackedByteArray("AAAdAAIAAgAAAAAAAAAdAAMAAgAAAAAAAAAdAAQAAgAAAAAAAAABAP//BQAAAAAAAAABAAAABQAAAAEAAAACAP//BQABAAAAAAACAAAABQABAAEAAAAEAP//BQAAAAAAAAAEAAAABQAAAAEAAAAFAP//BQABAAAAAAAFAAAABQABAAEAAAAHAP//BQAAAAAAAAAHAAAABQAAAAEAAAAIAP//BQABAAAAAAAIAAAABQABAAEAAAAVAP//BQAAAAAAAAAVAAAABQAAAAEAAAAWAP//BQABAAAAAAAWAAAABQABAAEAAAAYAP//BQAAAAAAAAAYAAAABQAAAAEAAAAZAP//BQABAAAAAAAZAAAABQABAAEAAAAbAP//BQAAAAAAAAAbAAAABQAAAAEAAAAcAP//BQABAAAAAAAcAAAABQABAAEAAAANAP7/BAAMAAAAAAANAP//BAAMAAEAAAAOAP7/BAANAAAAAAAOAP//BAANAAEAAAA=")
 tile_set = SubResource("TileSet_k6njd")
 
-[node name="door" type="TileMapLayer" parent="."]
-visible = false
-tile_map_data = PackedByteArray("AAANAP7/AQAOAAAAAAANAP//AQAOAAEAAAAOAP7/AQAPAAAAAAAOAP//AQAPAAEAAAA=")
-tile_set = SubResource("TileSet_jpeu0")
+[connection signal="body_entered" from="Estantes/Estante1" to="Estantes/Estante1" method="_on_body_entered"]
+[connection signal="body_exited" from="Estantes/Estante1" to="Estantes/Estante1" method="_on_body_exited"]
+[connection signal="body_entered" from="Estantes/Estante2" to="Estantes/Estante2" method="_on_body_entered"]
+[connection signal="body_exited" from="Estantes/Estante2" to="Estantes/Estante2" method="_on_body_exited"]
+[connection signal="body_entered" from="Estantes/Estante3" to="Estantes/Estante3" method="_on_body_entered"]
+[connection signal="body_exited" from="Estantes/Estante3" to="Estantes/Estante3" method="_on_body_exited"]
+[connection signal="body_entered" from="Estantes/Estante4" to="Estantes/Estante4" method="_on_body_entered"]
+[connection signal="body_exited" from="Estantes/Estante4" to="Estantes/Estante4" method="_on_body_exited"]
+[connection signal="body_entered" from="Estantes/Estante5" to="Estantes/Estante5" method="_on_body_entered"]
+[connection signal="body_exited" from="Estantes/Estante5" to="Estantes/Estante5" method="_on_body_exited"]
+[connection signal="body_entered" from="Estantes/Estante6" to="Estantes/Estante6" method="_on_body_entered"]
+[connection signal="body_exited" from="Estantes/Estante6" to="Estantes/Estante6" method="_on_body_exited"]

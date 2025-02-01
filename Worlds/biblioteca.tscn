@@ -1,10 +1,69 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkt525k4370dx"]
+[gd_scene load_steps=10 format=3 uid="uid://bkt525k4370dx"]
 
 [ext_resource type="PackedScene" uid="uid://pe2ox3jl24m" path="res://Tile Maps/map_biblioteca.tscn" id="1_3vhxw"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_p1e5q"]
+[ext_resource type="Script" path="res://Worlds/key.gd" id="3_87nt5"]
+[ext_resource type="Texture2D" uid="uid://dh5tns6j4kij4" path="res://assets/biblioteca/chave.png" id="4_6os5h"]
+[ext_resource type="Script" path="res://Worlds/door.gd" id="5_uuhe2"]
+[ext_resource type="Texture2D" uid="uid://b7yeeadks2d2s" path="res://assets/biblioteca/Fantasy Interior Tiles/Full.png" id="6_tfnsb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e8gh1"]
+size = Vector2(10, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t3v3g"]
+size = Vector2(23, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7c6ii"]
+size = Vector2(20, 25)
 
 [node name="Biblioteca" type="Node2D"]
 
 [node name="map_biblioteca" parent="." instance=ExtResource("1_3vhxw")]
 
 [node name="Player" parent="." instance=ExtResource("2_p1e5q")]
+collision_layer = 50
+collision_mask = 7
+
+[node name="key" type="Area2D" parent="."]
+collision_mask = 3
+script = ExtResource("3_87nt5")
+
+[node name="sprite_key" type="Sprite2D" parent="key"]
+position = Vector2(460, 140)
+texture = ExtResource("4_6os5h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="key"]
+position = Vector2(462, 137.5)
+shape = SubResource("RectangleShape2D_e8gh1")
+
+[node name="Door" type="Area2D" parent="."]
+collision_mask = 3
+script = ExtResource("5_uuhe2")
+
+[node name="Door_open" type="Sprite2D" parent="Door"]
+position = Vector2(223, -13)
+texture = ExtResource("6_tfnsb")
+region_enabled = true
+region_rect = Rect2(224, 0, 32, 35)
+
+[node name="Door_closed" type="Sprite2D" parent="Door"]
+position = Vector2(223, -15.5)
+scale = Vector2(1, 1.02778)
+texture = ExtResource("6_tfnsb")
+region_enabled = true
+region_rect = Rect2(194, -1, 28, 36)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(223.5, -11)
+shape = SubResource("RectangleShape2D_t3v3g")
+
+[node name="Door_blocker" type="StaticBody2D" parent="Door"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/Door_blocker"]
+position = Vector2(224, -16.5)
+shape = SubResource("RectangleShape2D_7c6ii")
+debug_color = Color(0, 0, 0, 0.42)
+
+[connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
+[connection signal="body_exited" from="Door" to="Door" method="_on_body_exited"]
