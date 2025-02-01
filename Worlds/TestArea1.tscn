@@ -21,6 +21,12 @@ position = Vector2(-89, 92)
 [node name="MainLandPos" type="Marker2D" parent="."]
 position = Vector2(-16, 127)
 
+[node name="Biblioteca" parent="." instance=ExtResource("5_dexcx")]
+position = Vector2(257, 264)
+
+[node name="BibliotecaPos" type="Marker2D" parent="."]
+position = Vector2(295, 250)
+
 [node name="TestAreaGelo" parent="." instance=ExtResource("5_dexcx")]
 position = Vector2(587, 113)
 

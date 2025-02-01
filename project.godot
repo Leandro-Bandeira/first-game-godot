@@ -30,9 +30,25 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 directories/dch_directory={
 "NPC": "res://Npc/NPC.dch",
+"door": "res://Worlds/Dialogos/door.dch",
+"doorOpen": "res://Worlds/Dialogos/doorOpen.dch",
+"estante1": "res://Worlds/Dialogos/estante1.dch",
+"estante2": "res://Worlds/Dialogos/estante2.dch",
+"estante3": "res://Worlds/Dialogos/estante3.dch",
+"estante4": "res://Worlds/Dialogos/estante4.dch",
+"estante5": "res://Worlds/Dialogos/estante5.dch",
+"estante6": "res://Worlds/Dialogos/estante6.dch",
 "key": "res://Worlds/key.dch"
 }
 directories/dtl_directory={
+"door": "res://Worlds/Dialogos/door.dtl",
+"doorOpen": "res://Worlds/Dialogos/doorOpen.dtl",
+"estante1": "res://Worlds/Dialogos/estante1.dtl",
+"estante2": "res://Worlds/Dialogos/estante2.dtl",
+"estante3": "res://Worlds/Dialogos/estante3.dtl",
+"estante4": "res://Worlds/Dialogos/estante4.dtl",
+"estante5": "res://Worlds/Dialogos/estante5.dtl",
+"estante6": "res://Worlds/Dialogos/estante6.dtl",
 "npc_dialogue": "res://Npc/npc_dialogue.dtl",
 "timeline": "res://Worlds/timeline.dtl"
 }

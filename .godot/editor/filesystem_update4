@@ -1,13 +1,29 @@
-res://Tile Maps/estante_3.gd
-res://Tile Maps/map_biblioteca.tscn
 res://Npc/dialogueStyle.tres
+res://Worlds/Dialogos/estante1.dch
+res://Worlds/Dialogos/estante1.dtl
 res://Worlds/MainLand.tscn
-res://Worlds/biblioteca.tscn
+res://Tile Maps/biblioteca_1.gd
+res://Tile Maps/map_biblioteca.tscn
+res://Worlds/Biblioteca.tscn
+res://Worlds/transicao/pathway.tscn
+res://Worlds/TestArea1.tscn
+res://Worlds/Dialogos/estante2.dch
+res://Worlds/Dialogos/estante2.dtl
+res://Tile Maps/estante_2.gd
+res://Worlds/Dialogos/estante3.dch
+res://Worlds/Dialogos/estante3.dtl
+res://Worlds/Dialogos/estante4.dch
+res://Worlds/Dialogos/estante4.dtl
+res://Worlds/Dialogos/estante5.dch
+res://Worlds/Dialogos/estante5.dtl
+res://Worlds/Dialogos/estante6.dtl
+res://Worlds/Dialogos/estante6.dch
+res://Tile Maps/estante_3.gd
 res://Tile Maps/estante_4.gd
 res://Tile Maps/estante_5.gd
 res://Tile Maps/estante_6.gd
-res://Worlds/key.gd
-res://Tile Maps/door.gd
 res://Worlds/door.gd
-res://Tile Maps/biblioteca_1.gd
-res://Tile Maps/estante_2.gd
+res://Worlds/Dialogos/door.dch
+res://Worlds/Dialogos/door.dtl
+res://Worlds/Dialogos/doorOpen.dch
+res://Worlds/Dialogos/doorOpen.dtl
