@@ -1,4 +1,5 @@
 res://Worlds
+res://Tile Maps
 res://main_menu
 res://Npc
 res://Worlds/transicao
@@ -7,4 +8,3 @@ res://
 res://Player/Scripts
 res://Player
 res://Player/reduced_vision
-res://Tile Maps

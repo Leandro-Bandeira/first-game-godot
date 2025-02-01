@@ -1,9 +1,6 @@
-res://node_2d.tscn
+res://Tile Maps/map_biblioteca.tscn
 res://Npc/dialogueStyle.tres
-res://Player/player.tscn
-res://Worlds/MainLand.tscn
-res://Npc/npc.tscn
-res://Worlds/key.gd
-res://Npc/NPC.dch
-res://Worlds/timeline.dtl
 res://Worlds/key.dch
+res://Worlds/MainLand.tscn
+res://Tile Maps/House.tscn
+res://Worlds/biblioteca.tscn

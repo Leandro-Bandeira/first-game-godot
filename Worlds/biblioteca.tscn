@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkt525k4370dx"]
+
+[ext_resource type="PackedScene" uid="uid://pe2ox3jl24m" path="res://Tile Maps/map_biblioteca.tscn" id="1_3vhxw"]
+[ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_p1e5q"]
+
+[node name="Biblioteca" type="Node2D"]
+
+[node name="map_biblioteca" parent="." instance=ExtResource("1_3vhxw")]
+
+[node name="Player" parent="." instance=ExtResource("2_p1e5q")]
