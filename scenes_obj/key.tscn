@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bgpgbnv7yvjbl"]
+
+[ext_resource type="Script" path="res://Worlds/key.gd" id="1_22o12"]
+[ext_resource type="Texture2D" uid="uid://dh5tns6j4kij4" path="res://assets/biblioteca/chave.png" id="2_lnm54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e8gh1"]
+size = Vector2(10, 17)
+
+[node name="key" type="Area2D"]
+collision_mask = 3
+script = ExtResource("1_22o12")
+
+[node name="sprite_key" type="Sprite2D" parent="."]
+position = Vector2(460, 140)
+texture = ExtResource("2_lnm54")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(462, 137.5)
+shape = SubResource("RectangleShape2D_e8gh1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,7 +1,7 @@
 extends Area2D
 var player_in_area := false
 @export var dialogue_name: String = "estante2"
-
+@export var book_number: int = 4
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -22,7 +22,12 @@ func _process(delta: float) -> void:
 	if player_in_area and Input.is_action_just_pressed("iteration"):
 		start_dialogue()
 		print("Nao tem nada por aqui 2")
-
+		if book_number == Global.correct_sequence[Global.current_sequence.size()]:
+			Global.current_sequence.append(book_number)
+			print(Global.current_sequence)
+		else:
+			Global.reset_sequence()
+			
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
