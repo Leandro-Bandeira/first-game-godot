@@ -1,14 +1,6 @@
-[gd_scene load_steps=13 format=3 uid="uid://dggrd0phu453d"]
+[gd_scene load_steps=11 format=3 uid="uid://bi8crg3nv50qw"]
 
-[ext_resource type="Script" path="res://Npc/npc.gd" id="1_7o7dn"]
-[ext_resource type="Texture2D" uid="uid://b08gmbuo7ghpc" path="res://Npc/humano1.png" id="2_2oimv"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w87fh"]
-radius = 8.0
-height = 16.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lvjw0"]
-size = Vector2(53, 57)
+[ext_resource type="Texture2D" uid="uid://b08gmbuo7ghpc" path="res://Npc/humano1.png" id="1_0pis5"]
 
 [sub_resource type="Animation" id="Animation_uca5l"]
 length = 0.001
@@ -132,34 +124,25 @@ _data = {
 "walk_up": SubResource("Animation_vmssm")
 }
 
-[node name="npc" type="CharacterBody2D"]
-collision_layer = 0
-collision_mask = 0
-script = ExtResource("1_7o7dn")
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h23px"]
+radius = 6.0
+height = 22.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
-shape = SubResource("CapsuleShape2D_w87fh")
-disabled = true
+[node name="NPC" type="CharacterBody2D"]
+collision_mask = 19
 
-[node name="Area2D" type="Area2D" parent="."]
-collision_mask = 3
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0.5, -4.5)
-shape = SubResource("RectangleShape2D_lvjw0")
-debug_color = Color(0.658824, 0.513726, 0.105882, 0.109804)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_0pis5")
+hframes = 4
+vframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_1ene3")
 }
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -8)
-texture = ExtResource("2_2oimv")
-hframes = 4
-vframes = 8
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = -1.57079
+shape = SubResource("CapsuleShape2D_h23px")
+debug_color = Color(0, 0.6, 0.701961, 0)
