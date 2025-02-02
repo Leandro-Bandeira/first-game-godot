@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://3a34dc7q7ank"]
+[gd_scene load_steps=16 format=3 uid="uid://3a34dc7q7ank"]
 
 [ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_3lpu1"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="1_gd2bu"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bkvwucym7pqm8" path="res://assets/sprites/1px All.png" id="8_xs4fr"]
 [ext_resource type="Script" path="res://Worlds/door.gd" id="9_fvxsg"]
 [ext_resource type="Texture2D" uid="uid://cmxr35jbn0k6q" path="res://Tile Maps/sprite/Pixel Art Top Down - Basic v1.1.2/Texture/TX Props.png" id="10_gxlp4"]
+[ext_resource type="Script" path="res://Worlds/sombra_collision.gd" id="11_0v2m1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3wej4"]
 size = Vector2(20, 19)
@@ -19,6 +20,9 @@ size = Vector2(49, 53)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2dtp7"]
 size = Vector2(48, 48.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w2lj"]
+size = Vector2(28, 19)
 
 [node name="MainLand" type="Node2D"]
 script = ExtResource("1_3lpu1")
@@ -90,5 +94,15 @@ position = Vector2(3, -2.25)
 shape = SubResource("RectangleShape2D_2dtp7")
 debug_color = Color(0, 0, 0, 0.42)
 
+[node name="Sombra_Collision" type="Area2D" parent="."]
+collision_mask = 3
+script = ExtResource("11_0v2m1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sombra_Collision"]
+position = Vector2(220, 251.5)
+shape = SubResource("RectangleShape2D_4w2lj")
+
 [connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
 [connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
+[connection signal="body_entered" from="Sombra_Collision" to="Sombra_Collision" method="_on_body_entered"]
+[connection signal="body_exited" from="Sombra_Collision" to="Sombra_Collision" method="_on_body_exited"]

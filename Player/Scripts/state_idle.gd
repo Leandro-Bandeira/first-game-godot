@@ -26,11 +26,11 @@ func exit() -> void:
 	pass
 
 func process(delta : float) -> State:
-	if Input.is_action_just_pressed("sombra") and Global.shadow == false:
+	if Input.is_action_just_pressed("sombra") and not Global.shadow and Global.can_shadow:
 		print("ShadowON")
 		player.updateAnimation("idle3")
 		Global.shadow = true
-	elif Input.is_action_just_pressed("sombra") and Global.shadow == true: 
+	elif Input.is_action_just_pressed("sombra") and Global.shadow: 
 		Global.shadow = false
 		print("ShadowOFF")
 		player.updateAnimation("idle2")
