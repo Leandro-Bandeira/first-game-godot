@@ -2,12 +2,15 @@ class_name StateIdle extends State
 
 @onready var walk : State = $"../Walk"
 
-func enter() -> void:
+
+
+
+func enter() -> void: 
 	# Atualiza a animação do jogador para o estado "idle"
-	#if(getParentN(3).name.to_lower().find("gelo") != -1):
-	#	player.updateAnimation("idleCold")
-	#else:
-	player.updateAnimation("idle")
+	if(Global.shadow == true):
+		player.updateAnimation("walk2")
+	else:
+		player.updateAnimation("idle")
 
 	
 # Função para pegar um nó "mais acima" (n parent)
@@ -23,6 +26,15 @@ func exit() -> void:
 	pass
 
 func process(delta : float) -> State:
+	if Input.is_action_just_pressed("sombra") and Global.shadow == false:
+		print("ShadowON")
+		player.updateAnimation("idle3")
+		Global.shadow = true
+	elif Input.is_action_just_pressed("sombra") and Global.shadow == true: 
+		Global.shadow = false
+		print("ShadowOFF")
+		player.updateAnimation("idle2")
+	
 	# Verifica se o jogador está se movendo
 	if player.movementDirection != Vector2.ZERO:
 		return walk  # Transição para o estado "walk"

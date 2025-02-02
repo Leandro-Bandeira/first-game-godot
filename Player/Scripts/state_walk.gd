@@ -3,16 +3,20 @@ class_name StateWalk extends State
 @export var moveSpeed : float = 75.0
 @onready var idle : State = $"../Idle"
 
+
 func enter() -> void:
 	# Atualiza a animação do jogador para o estado "walk"
-	player.updateAnimation("walk")
+	if(Global.shadow == true):
+		player.updateAnimation("walk2")
+	else:
+		player.updateAnimation("walk")
 
 func exit() -> void:
 	# Executa ao sair do estado "walk"
 	pass
 
 func process(delta: float) -> State:
-	# Se o jogador não estiver se movendo, retorna ao estado "idle"
+
 	if player.movementDirection == Vector2.ZERO:
 		return idle
 
@@ -22,7 +26,10 @@ func process(delta: float) -> State:
 
 	# Atualiza a animação se a direção mudar
 	if player.setDirection():
-		player.updateAnimation("walk")
+		if(Global.shadow == true):
+			player.updateAnimation("walk2")
+		else:
+			player.updateAnimation("walk")
 
 	return null
 
