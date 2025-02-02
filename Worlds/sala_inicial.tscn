@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjjrbphq3bkpr"]
+
+[ext_resource type="PackedScene" uid="uid://ddebhrp8t8wmn" path="res://Tile Maps/sala_inicial.tscn" id="1_r8vf3"]
+[ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_hkwec"]
+[ext_resource type="PackedScene" uid="uid://dggrd0phu453d" path="res://Npc/npc.tscn" id="3_xmcjp"]
+
+[node name="SalaInicial" type="Node2D"]
+
+[node name="Sala_inicial" parent="." instance=ExtResource("1_r8vf3")]
+
+[node name="Player" parent="." instance=ExtResource("2_hkwec")]
+position = Vector2(118, 72)
+
+[node name="npc" parent="." instance=ExtResource("3_xmcjp")]
+position = Vector2(66, 65)
