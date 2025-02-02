@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=4 uid="uid://ddebhrp8t8wmn"]
+[gd_scene load_steps=16 format=4 uid="uid://cp78l6qrm030o"]
 
 [ext_resource type="Texture2D" uid="uid://d3um7fqhgkdot" path="res://Tile Maps/sprite/dugeon/dungeon_temple/32x32/A2_32x32.png" id="1_df7eg"]
 [ext_resource type="Texture2D" uid="uid://dn8pjwduaapxb" path="res://Tile Maps/sprite/dugeon/dungeon_temple/16x16/A2_16x16.png" id="2_3ctmw"]

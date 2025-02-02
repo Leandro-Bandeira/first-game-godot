@@ -61,3 +61,6 @@ func getAnimDirection() -> String:
 
 func init_itens() -> void:
 	has_key = false
+	
+
+	
