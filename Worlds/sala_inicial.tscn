@@ -65,7 +65,7 @@ position = Vector2(4, 57)
 script = ExtResource("8_tqudw")
 
 [node name="npc2" parent="." instance=ExtResource("3_xmcjp")]
-position = Vector2(118, 46)
+position = Vector2(121, 128)
 collision_mask = 3
 script = ExtResource("4_xs3gq")
 npc_resource = null
@@ -91,7 +91,7 @@ script = ExtResource("8_tqudw")
 
 [node name="PatrolLocation2" parent="npc2/NpcBehaviorPatrol" instance=ExtResource("7_sh2js")]
 modulate = Color(1, 1, 0, 1)
-position = Vector2(1, 72)
+position = Vector2(2, -96)
 script = ExtResource("8_tqudw")
 
 [node name="Marker2D" type="Marker2D" parent="."]
