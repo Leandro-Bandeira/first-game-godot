@@ -1,8 +1,6 @@
 extends Area2D
 
 @onready var player: Player = $"../Player"
-@onready var window_open =  $"../Sala_inicial/objects3"
-@onready var window_closed = $"../Sala_inicial/objects"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -15,7 +13,7 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player") and window_open.visible:
+	if body.is_in_group("player") and Global.exist_shadow:
 		Global.can_shadow = true
 
 

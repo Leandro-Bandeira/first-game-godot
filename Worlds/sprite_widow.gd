@@ -14,13 +14,16 @@ func _process(delta: float) -> void:
 	if player_window and Input.is_action_just_pressed("iteration"):
 		window_open.visible = true
 		window_closed.visible = false
+		Global.exist_shadow = true
 
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group('player'):
 		player_window = true
+		
 
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group('player'):
 		player_window = false
+		

@@ -13,6 +13,7 @@ var player_in_vision = false # Para detecção visual
 @onready var respawn: Marker2D = $"../Marker2D"
 
 func _ready() -> void:
+	Global.exist_shadow = true
 	pass
 
 # Função chamada quando o jogador entra na área de detecção

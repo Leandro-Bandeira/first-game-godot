@@ -1,10 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://3a34dc7q7ank"]
+[gd_scene load_steps=15 format=3 uid="uid://3a34dc7q7ank"]
 
 [ext_resource type="Script" path="res://Worlds/transicao/levels.gd" id="1_3lpu1"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="1_gd2bu"]
 [ext_resource type="AudioStream" uid="uid://b3tfmo5chu77y" path="res://example_music/example_music_01.ogg" id="2_on0mg"]
 [ext_resource type="PackedScene" uid="uid://7uwhbscvd0jk" path="res://Tile Maps/MainLand.tscn" id="2_p7amx"]
-[ext_resource type="PackedScene" uid="uid://bqctp7mykqxgj" path="res://Worlds/transicao/pathway.tscn" id="3_0xu8a"]
 [ext_resource type="PackedScene" uid="uid://dggrd0phu453d" path="res://Npc/npc.tscn" id="6_6v2sf"]
 [ext_resource type="Script" path="res://Worlds/key.gd" id="7_ehy1l"]
 [ext_resource type="Texture2D" uid="uid://bkvwucym7pqm8" path="res://assets/sprites/1px All.png" id="8_xs4fr"]
@@ -30,16 +29,13 @@ music = ExtResource("2_on0mg")
 
 [node name="Player" parent="." instance=ExtResource("1_gd2bu")]
 z_index = 1
-position = Vector2(164, 140)
+position = Vector2(513, 195)
 collision_layer = 2
-collision_mask = 5
+collision_mask = 7
 
 [node name="welcome_land" parent="." instance=ExtResource("2_p7amx")]
 
-[node name="TestArea1" parent="." instance=ExtResource("3_0xu8a")]
-position = Vector2(540, 155)
-
-[node name="TestArea1Pos" type="Marker2D" parent="."]
+[node name="SalaInicialPos" type="Marker2D" parent="."]
 position = Vector2(524, 191)
 
 [node name="npc" parent="." instance=ExtResource("6_6v2sf")]
@@ -48,6 +44,7 @@ collision_layer = 3
 collision_mask = 3
 
 [node name="key" type="Area2D" parent="."]
+collision_layer = 2
 collision_mask = 2
 script = ExtResource("7_ehy1l")
 

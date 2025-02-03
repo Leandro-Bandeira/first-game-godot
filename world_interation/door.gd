@@ -4,6 +4,7 @@ extends Area2D
 @onready var door_close = $Door_closed
 @onready var door_open = $Door_open
 @onready var player_nearby_door = false
+@onready var start_level =  preload("res://Worlds/MainLand.tscn") as PackedScene
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -34,5 +35,9 @@ func _process(delta: float) -> void:
 		if player and player.has_key:
 			door_close.visible = false
 			door_open.visible = true
+			TransitionScreen.transition() # Inicia a transição
+			await TransitionScreen.on_transition_finished 
+			get_tree().change_scene_to_packed(start_level)
+			
 		else:
 			print("Precisa da chave")
