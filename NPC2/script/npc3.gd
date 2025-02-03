@@ -1,5 +1,5 @@
 @tool
-class_name NPC extends CharacterBody2D
+class_name NPC2 extends CharacterBody2D
 
 signal do_behavior_enabled
 
@@ -57,8 +57,7 @@ func can_see_player():
 				break
 	
 func kill_player():
-	if not Global.shadow: 
-		player.global_position = respawn.global_position
+	player.global_position = respawn.global_position
 
 func update_animation() -> void:
 	animation.play( state + "_" + direction_name )

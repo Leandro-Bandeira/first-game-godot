@@ -29,8 +29,9 @@ func _process(delta: float) -> void:
 	
 
 func _on_body_entered(body: Node2D) -> void:
-	body.has_key = true
-	start_dialogue()
-	key.visible = false
+	if Global.shadow:
+		body.has_key = true
+		start_dialogue()
+		key.visible = false
 	#queue_free()
 	

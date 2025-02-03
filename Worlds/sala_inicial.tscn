@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://csqx5cjac5hnj"]
+[gd_scene load_steps=20 format=3 uid="uid://csqx5cjac5hnj"]
 
 [ext_resource type="PackedScene" uid="uid://cp78l6qrm030o" path="res://Tile Maps/sala_inicial.tscn" id="1_r8vf3"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_hkwec"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cefhm3eagynl4" path="res://assets/sprites/Medieval_props_free.png" id="11_b6fdl"]
 [ext_resource type="Script" path="res://Worlds/key.gd" id="12_3lj2p"]
 [ext_resource type="Texture2D" uid="uid://bkvwucym7pqm8" path="res://assets/sprites/1px All.png" id="13_ugc8y"]
+[ext_resource type="Script" path="res://Worlds/sombra_collision.gd" id="14_54k3r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bj24e"]
 
@@ -24,6 +25,9 @@ size = Vector2(18.5, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e6s8o"]
 size = Vector2(17, 16.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q2fb"]
+size = Vector2(17, 32.25)
 
 [node name="SalaInicial" type="Node2D"]
 
@@ -132,6 +136,7 @@ position = Vector2(-158, -129)
 shape = SubResource("RectangleShape2D_5fers")
 
 [node name="key" type="Area2D" parent="."]
+position = Vector2(-137, 21)
 collision_mask = 2
 script = ExtResource("12_3lj2p")
 
@@ -145,6 +150,30 @@ region_rect = Rect2(210.005, 15.0263, 19.1921, 10.725)
 position = Vector2(224.5, 85.75)
 shape = SubResource("RectangleShape2D_e6s8o")
 
+[node name="Sombra_Collision" type="Area2D" parent="."]
+collision_mask = 3
+script = ExtResource("14_54k3r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sombra_Collision"]
+position = Vector2(200.5, 124.75)
+shape = SubResource("RectangleShape2D_2q2fb")
+
+[node name="Sombra_Collision2" type="Area2D" parent="."]
+collision_mask = 3
+script = ExtResource("14_54k3r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sombra_Collision2"]
+position = Vector2(153, 109.875)
+shape = SubResource("RectangleShape2D_2q2fb")
+
+[node name="Sombra_Collision3" type="Area2D" parent="."]
+collision_mask = 3
+script = ExtResource("14_54k3r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sombra_Collision3"]
+position = Vector2(87, 110)
+shape = SubResource("RectangleShape2D_2q2fb")
+
 [connection signal="body_entered" from="npc/VisionArea" to="npc" method="_on_vision_area_body_entered"]
 [connection signal="body_exited" from="npc/VisionArea" to="npc" method="_on_vision_area_body_exited"]
 [connection signal="body_entered" from="npc2/VisionArea" to="npc2" method="_on_vision_area_body_entered"]
@@ -154,3 +183,9 @@ shape = SubResource("RectangleShape2D_e6s8o")
 [connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
 [connection signal="body_exited" from="Door" to="Door" method="_on_body_exited"]
 [connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
+[connection signal="body_entered" from="Sombra_Collision" to="Sombra_Collision" method="_on_body_entered"]
+[connection signal="body_exited" from="Sombra_Collision" to="Sombra_Collision" method="_on_body_exited"]
+[connection signal="body_entered" from="Sombra_Collision2" to="Sombra_Collision2" method="_on_body_entered"]
+[connection signal="body_exited" from="Sombra_Collision2" to="Sombra_Collision2" method="_on_body_exited"]
+[connection signal="body_entered" from="Sombra_Collision3" to="Sombra_Collision3" method="_on_body_entered"]
+[connection signal="body_exited" from="Sombra_Collision3" to="Sombra_Collision3" method="_on_body_exited"]
