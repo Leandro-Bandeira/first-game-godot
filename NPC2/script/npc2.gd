@@ -16,9 +16,17 @@ var player_in_vision = false
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var player: Player = $"../Player"
 @onready var shape_cast: ShapeCast2D = $ShapeCast2D
+@onready var collisionPolygon2 = $"../npc2/VisionArea/CollisionPolygon2D"
+@onready var collisionPolygon1 = $"../npc/VisionArea/CollisionPolygon2D"
 @onready var respawn: Marker2D = $"../Marker2D"
+@onready var rotation_base_shape_cast = 0
+@onready var rotation_base_collision2 = 0
+@onready var rotation_base_collision1 = 0
 
 func _ready() -> void:
+	rotation_base_shape_cast = shape_cast.rotation_degrees
+	rotation_base_collision2 = collisionPolygon2.rotation_degrees
+	rotation_base_collision1 = collisionPolygon1.rotation_degrees
 	setup_npc()
 	if Engine.is_editor_hint():
 		return
@@ -26,6 +34,12 @@ func _ready() -> void:
 	pass
 
 func _physics_process(delta: float) -> void:
+	
+	if direction_name == "down":
+		shape_cast.rotation_degrees = rotation_base_shape_cast
+		collisionPolygon2.rotation_degrees = rotation_base_collision2
+		collisionPolygon1.rotation_degrees = rotation_base_collision1
+		
 	move_and_slide()
 	if player_in_vision:
 		print("aqui")
@@ -70,6 +84,9 @@ func update_direction_name() -> void:
 	var threshold : float = 0.45
 	if direction.y < -threshold:
 		direction_name = "up"
+		shape_cast.rotation_degrees += 180
+		collisionPolygon2.rotation_degrees += 180
+		collisionPolygon1.rotation_degrees += 180
 	elif direction.y > threshold:
 		direction_name = "down"
 	elif direction.x > threshold || direction.x < -threshold:

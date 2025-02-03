@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://csqx5cjac5hnj"]
+[gd_scene load_steps=18 format=3 uid="uid://csqx5cjac5hnj"]
 
 [ext_resource type="PackedScene" uid="uid://cp78l6qrm030o" path="res://Tile Maps/sala_inicial.tscn" id="1_r8vf3"]
 [ext_resource type="PackedScene" uid="uid://cvar6d8rfgrd2" path="res://Player/player.tscn" id="2_hkwec"]
@@ -8,8 +8,22 @@
 [ext_resource type="Script" path="res://NPC2/script/npc_behavior_patrol.gd" id="6_vhqsq"]
 [ext_resource type="PackedScene" uid="uid://dyhn3j7qk4dqw" path="res://NPC2/patrol_location.tscn" id="7_sh2js"]
 [ext_resource type="Script" path="res://NPC2/script/patrol_location.gd" id="8_tqudw"]
+[ext_resource type="Script" path="res://Worlds/sprite_widow.gd" id="9_ub5d3"]
+[ext_resource type="Script" path="res://world_interation/door.gd" id="10_od7nf"]
+[ext_resource type="Texture2D" uid="uid://cefhm3eagynl4" path="res://assets/sprites/Medieval_props_free.png" id="11_b6fdl"]
+[ext_resource type="Script" path="res://Worlds/key.gd" id="12_3lj2p"]
+[ext_resource type="Texture2D" uid="uid://bkvwucym7pqm8" path="res://assets/sprites/1px All.png" id="13_ugc8y"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bj24e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2p3ma"]
+size = Vector2(51, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5fers"]
+size = Vector2(18.5, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e6s8o"]
+size = Vector2(17, 16.5)
 
 [node name="SalaInicial" type="Node2D"]
 
@@ -83,7 +97,60 @@ script = ExtResource("8_tqudw")
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(225, 55)
 
+[node name="Sprite_window" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("9_ub5d3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite_window"]
+position = Vector2(191.5, 3)
+shape = SubResource("RectangleShape2D_2p3ma")
+
+[node name="Door" type="Area2D" parent="."]
+position = Vector2(249, 136)
+collision_layer = 2
+collision_mask = 3
+script = ExtResource("10_od7nf")
+
+[node name="Door_closed" type="Sprite2D" parent="Door"]
+position = Vector2(-157.125, -129.5)
+scale = Vector2(0.419811, 0.402778)
+texture = ExtResource("11_b6fdl")
+region_enabled = true
+region_rect = Rect2(67, 22, 53, 72)
+
+[node name="Door_open" type="Sprite2D" parent="Door"]
+visible = false
+position = Vector2(-158.5, -128.266)
+scale = Vector2(0.388889, 0.465572)
+texture = ExtResource("11_b6fdl")
+region_enabled = true
+region_rect = Rect2(124.11, 28.61, 54.45, 59.29)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2(-158, -129)
+shape = SubResource("RectangleShape2D_5fers")
+
+[node name="key" type="Area2D" parent="."]
+collision_mask = 2
+script = ExtResource("12_3lj2p")
+
+[node name="sprite_key" type="Sprite2D" parent="key"]
+position = Vector2(224, 86)
+texture = ExtResource("13_ugc8y")
+region_enabled = true
+region_rect = Rect2(210.005, 15.0263, 19.1921, 10.725)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="key"]
+position = Vector2(224.5, 85.75)
+shape = SubResource("RectangleShape2D_e6s8o")
+
 [connection signal="body_entered" from="npc/VisionArea" to="npc" method="_on_vision_area_body_entered"]
 [connection signal="body_exited" from="npc/VisionArea" to="npc" method="_on_vision_area_body_exited"]
 [connection signal="body_entered" from="npc2/VisionArea" to="npc2" method="_on_vision_area_body_entered"]
 [connection signal="body_exited" from="npc2/VisionArea" to="npc2" method="_on_vision_area_body_exited"]
+[connection signal="body_entered" from="Sprite_window" to="Sprite_window" method="_on_body_entered"]
+[connection signal="body_exited" from="Sprite_window" to="Sprite_window" method="_on_body_exited"]
+[connection signal="body_entered" from="Door" to="Door" method="_on_body_entered"]
+[connection signal="body_exited" from="Door" to="Door" method="_on_body_exited"]
+[connection signal="body_entered" from="key" to="key" method="_on_body_entered"]
